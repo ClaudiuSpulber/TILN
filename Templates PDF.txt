@@ -1,0 +1,65 @@
+PDF 1:
+    Titlu
+    Autor
+    Subtitlu Abstract: South African adolescents(840), females, males
+    Blablablablabla
+    Subtitlu Method: Participants: 840 adolescents, females, males,ages between 14-18, Black African, Indian, White, Colored
+    Blablablablabla
+
+PDF 2: 
+    Titlu
+    Autor
+    Blablablablabla
+    Subtitlu Method and results: 35 men 35 women
+    Blablablablabla
+
+PDF 3:
+    Titlu 
+    Autor
+    Data
+    Blablablablabla
+    Subtitlu Method: 1825 men and women, college degrees, age 21 to 63 and 21-64
+    Blablablablabla
+
+PDF 4:
+    Titlu
+    Autor
+    Locatie
+    Blablablablabla
+    Subtitlu Method: Participants: 132 israeli students, 85 women ages 18 to 33, 47 men ages 20-29,married or living with partner
+    Blablablablabla
+
+PDF 5: 
+    Titlu
+    Autor
+    Locatie
+    Data
+    Blablablablabla
+    Subtitlu Method: Participants: sex, number of target, nationality
+    Blablablablabla
+
+PDF 6:
+    Titlu
+    Autor
+    Blablablablabla
+    Subtitlu Abstract: college students, number, sex, age average
+    Blablablablabla
+    Subtitlu Method: Participants: number, sex, age average
+    Blablablablabla
+
+PDF 7:
+    Titlu
+    Autor
+    Blablablablabla
+    Subtitlu Method: Participants: number, individuality, age, children, sex
+    Blablablablabla
+
+PDF 8:
+    Titlu
+    Autor
+    Locatie
+    Blablablablabla
+    Subtitlu Method: Participants: students, number, age average, nationality
+    Blablablablabla
+
+

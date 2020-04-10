@@ -1,0 +1,773 @@
+Person. indicid. Difl Vol. 12, No. 9, pp. 887-898,   1991                                           0191-8869191   53.00 + 0.00
+Printed in Great Britain                                                                                    Pergamon Press plc
+
+
+
+
+                        FACET SCALES FOR AGREEABLENESS    AND
+                        CONSCIENTIOUSNESS:  A REVISION OF THE
+                             NE0 PERSONALITY INVENTORY*
+
+                         PAUL T. COSTAJR,’ t ROBERTR. MCCRAE’ and DAVIDA. DYE*
+             ‘Gerontology     Research Center, National Institute on Aging, NIH, Baltimore, MD 21224, U.S.A.
+                                *U.S. Office of Personnel Management, Washington, DC, U.S.A.
+
+                                                        (Received 4 December   1990)
+
+
+          Summary-The      NE0 Personality Inventory (NEO-PI) is intended to operationahze the five-factor model
+          of personality, both at the level of broad factors or domains and at the level of more specific traits or
+          facets of each domain. However, only facets of three of the domains are currently measured. In this paper
+          we describe minor modifications to the facet scales of Neuroticism, Extraversion, and Openness, and the
+          development of new scales to measure facets of Agreeableness and Conscientiousness. Conceptual
+          distinctions within these domains were suggested by a review of the literature, and pilot studies provided
+          preliminary evidence for the validity of new facet scales. Item analyses in a large and diverse sample
+          (n = 1539) of adult men and women were used to finalize item selection and to confirm the structure of
+          the Revised NEO-PI (NEO-PIR) at both the item and the scale level. Correlations of the NEO-PIR with
+          a variety of other self-report scales in a second sample of 394 men and women provided evidence on
+          the convergent and discriminant validity of scales to measure Trust, Straightforwardness, Altruism,
+          Compliance, Modesty and Tender-Mindedness as facets of Agreeableness, and Competence, Order,
+          Dutifulness, Achievement Striving, Self-Discipline, and Deliberation as facets of Conscientiousness.
+
+
+There is growing agreement among personality psychologists from many different perspectives that,
+at the broadest level, there are five major dimensions of personality (Digman, 1990; John, 1990;
+Hogan, 1987; Wiggins & Trapnell, in press). The five factors of Neuroticism (N), Extraversion (E),
+Openness to Experience (0), Agreeableness (A), and Conscientiousness (C) have been recovered
+in self-reports and ratings, in studies of adults and children, in a variety of theoretically based
+questionnaires, and in the analysis of adjectives from several different languages.
+   These broad factors are defined by more narrow traits (or facets; Costa & McCrae, in press),
+and Briggs (1989) has recently argued that psychologists should explore these lower-level traits, for
+two reasons: (1) because they provide a clearer conceptual basis for the five broad factors; and
+(2) because they themselves mark important individual differences. For example, two individuals
+with identical extraversion scores may differ strikingly in their profiles on specific facets of E, and
+these differences may be significant in many contexts. The specific variance associated with
+individual traits may have predictive utility, as shown by Mershon and Gorsuch (1988).
+   Conceptually, the nature of the factors can be determined from the individual adjectives
+(Goldberg, 1990) or homogeneous item clusters (Hogan, 1986) that define them, but no published
+instrument routinely provides scores on facets of all five factors. The Revised Interpersonal
+Adjective Scales-Big Five (IASR-BS) of Trapnell and Wiggins (1990) measure eight traits that form
+the interpersonal circumplex and specify elements of A and E, but provide only global measures
+of N, 0, and C. The NE0 Personality Inventory (Costa & McCrae, 1985, 1989a) has facet scales
+for N, E, and 0, but not for A and C. This paper introduces new scales to measure facets of these
+latter domains.
+   The consensus on the five-factor model does not extend to the level of facet traits (Briggs, 1989).
+The body of trait terms in the English language provided a useful guide to broad factors, but many
+important distinctions that trait psychologists make have not been encoded in lay adjectives
+(McCrae, 1990), so analyses of adjectives are unlikely to be sufficient for the identification of facets.
+
+*Portions of this paper were presented at the Annual Meeting of the Society of Multivariate Experimental Psychology,
+   2-4 November 1989, Honolulu, HI, and at the Midwinter  Meeting of the Society for Personality Assessment, l-9 March
+   1991, New Orleans, LA.
+tTo whom all correspondence should be addressed, at: Laboratory of Personality and Cognition, Gerontology Research
+   Center, 4940 Eastern Avenue, Baltimore, MD 21224, U.S.A.
+
+PAlD,?.9-a                                                         887
+888                                     PAUL T. COSTAJR et al.
+
+
+At present, it appears that the best basis for specifying facets A and C is an analysis of the
+psychological literature. Although the facets proposed are not the only possible ones, they should
+mark an advance over global scales, and research using these new facet scales may lead eventually
+to improved conceptualizations.
+   Our approach to the development of A and C facet scales parallels earlier work on N, E, and 0
+(Costa & McCrae, 1978, 1980). We identified six facet scales for each domain, not because each
+is natually divisible into six parts, but because at least six distinctions were suggested by the
+literature, and more than six scales would tax the user’s ability to learn and remember the facets.
+For each domain, we sought to identify traits that were familiar through previous theory and
+measurement, roughly comparable in breadth, and maximally distinct from each other.
+
+                 CONCEPTUALIZING  FACETS OF AGREEABLENESS
+                           AND CONSCIENTIOUSNESS
+
+   The process of conceptualizing facets involves identifying as many relevant constructs as possible
+and then grouping them into categories. Items can then be written to tap the proposed facets, and
+item analyses provide empirical tests of the proposed conceptual distinctions. A conceptual analysis
+of Agreeableness has been published (Costa, McCrae & Dembroski, 1989); an early analysis of
+Conscientiousness (as self-control) was offered by McCrae (1976). This section summarizes our
+current view of the facets and traces their origins in the psychological literature.
+
+Agreeableness
+   Agreeableness, like Extraversion, is primarily a dimension of interpersonal behavior; but whereas
+E is chiefly related to the preferred quantity of social stimulation, A represents the characteristic
+quality of interaction “along a continuum from compassion to antagonism” (Costa & McCrae,
+1985, p. 2). This dimension is perhaps most familiar in its role as one of the defining axes of the
+interpersonal circumplex (McCrae & Costa, 1989) but A is revealed in more than interpersonal
+behavior. Agreeableness also influences the self-image and helps to shape social attitudes and
+philosophy of life. We have identified Trust, Straightforwardness, Altruism, Compliance, Modesty,
+and Tender-Mindedness as facets of A.
+   Trust can be defined as the tendency to attribute benevolent intent to others; distrust as the
+suspicion that others are dishonest or dangerous. Trust is a classic personality variable, seen by
+Erikson (1950) as the foundation of psychosocial development, and by Wrightsman (1974) as one
+of the major definers of each individual’s philosophy of human nature. Trust is also an important
+element of lay conceptions of personality. When Norman classified 1431 English-language trait
+descriptive adjectives into 75 categories (Goldberg, 1989) the first category assigned to the
+Agreeableness factor was called Trust. Low standing on this facet is associated with cynicism.
+   Straightforwardness implies directness and frankness in dealing with others. This variable is far
+more important in moral philosophy than it has been in personality psychology, although one
+version of its opposite pole, Machiavellianism (Geis, 1978), was a popular concept in the 1970s.
+The concept of Self-monitoring (Snyder, 1974) also involves low Straightforwardness. Wiggins
+(1979) identified a similar dimension of the Interpersonal Circumplex contrasting Ingenuous with
+Calculating.
+   Altruism is selflessness and concern for others, and as a concept it has figured prominently
+in recent social psychology, but also in the classic personality theory of Adler (1964), who
+called it ‘social interest’. Norman’s categories contrast Generosity and Altruism with Greed;
+Murray’s (1938) need for Nurturance is probably also related. The word ‘altruism’ sometimes
+suggests conspicuous self-sacrifice; here it is also intended to cover more mundane courtesy and
+consideration.
+   Compliance is an interpersonal style that is seen when conflicts arise; compliant individuals defer
+to others instead of fighting; they are meek and mild. In a positive sense, this trait is seen in a
+willingness to cooperate that Norman called Agreeableness and Digman and Inouye (1986) called
+Friendly Compliance. The opposite, aggressive, pole is better known: Anger Expression is a major
+part of Buss and Durkee’s (I 957) Hostility Inventory; Quarrelsomeness was one of Wiggins’ (1979)
+IAS variables (although it was omitted from the revision of the IAS); and aggression is a key
+                                Facets of Agreeableness and Conscientiousness                         889
+
+
+concept in social psychology, psychiatry, and even ethology. Vindictiveness, Antagonism, and
+Aggressiveness are the corresponding Norman categories.
+  Modesty, or humility, refers to an aspect of the self-concept. Modest people are not preoccupied
+with themselves; arrogant people have an inflated view of themselves. Murray (1938) identified a
+need for Abasement, and Wiggins (1979) contrasted Arrogant with Unassuming traits. The clinical
+concept of Narcissism refers to a pathologically extreme lack of modesty.
+  Tender-Mindedness     refers to the tendency to be guided by feelings, particularly those of
+sympathy, in making judgments and forming attitudes. The term was originated by William James,
+and this dimension is also akin to Eysenck’s (1954) T dimension in political and social attitudes.
+The Thinking-Feeling index of the Myers-Briggs Type Indicator (MBTI; Myers & McCaulley,
+1985) measures a related construct. Eysenck and Eysenck (1975) have suggested the use of the term
+‘Tough-minded’ to refer to their Psychoticism dimension, and Scale I of the 16PF (Cattell, Eber
+& Tatsuoka, 1970) is also called Tender-Mindedness, but both these constructs are considerably
+broader than our conception of Tender-Mindedness.
+
+Conscientiousness
+   As an aspect of character, Conscientiousness was studied by Hartshorn, May and Maller (1929);
+as an aspect of ego strength, it was described by Murray and Kluckhohn (1953) using such terms
+as will power, initiative, and responsibility. Tellegen and Waller (in press) have identified the related
+dimension of Constraint. We conceptualize C as having both proactive and inhibitive aspects, and
+once favored the term Direction as the name of the domain, because it implied both movement
+and focus. The proactive side of Conscientiousness is seen most clearly in the need for achievement
+and commitment to work; the inhibitive side is seen in moral scrupulousness and cautiousness. The
+proposed facets of C are Competence, Order, Dutifulness, Achievement Striving, Self-Discipline,
+and Deliberation.
+    By Competence we mean the sense that one is capable, sensible, and accomplished. The concept
+is chiefly known from White’s (1959) essay on the topic; a sense of competence is a major
+component of some versions of self-esteem (e.g. O’Brien & Epstein, 1974). Many lexical studies
+show that some aspects of rated or self-reported intelligence (e.g. logical, foresighted vs thoughtless,
+imperceptive) also load on a Conscientiousness factor (McCrae, 1990); we view these as reflections
+of Competence. We would also hypothesize that locus of control would be related to this facet.
+   Order, the tendency to keep one’s environment tidy and well organized, is familiar from several
+personality inventories: Orderly is one of the scales of Lorr’s (1986) Interpersonal Style Inventory
+(ISI) in the Self-Control cluster. Order was one of Murray’s needs, and one of Norman’s categories.
+Pathological forms of Order are seen in compulsive behavior.
+   Dutifulness refers to strict adherence to standards of conduct; it is seen in Norman’s Reliability
+category. Freudian concepts of superego strength are also related, and this is probably the facet
+of C closest to Cattell’s G factor. Dutifulness should not be equated with moral development or
+reasoning (Rest, 1979); it does not concern the origin or sophistication of moral principles, only
+the extent to which principles or standards are observed.
+   Digman and Inouye (1986) preferred to call C ‘Will to Achieve’, and Achievement Striving is
+one of our facets of C. Need for achievement is perhaps the most widely researched of Murray’s
+needs, and our view of this trait is consistent with the classical definition of Achievement as a
+striving for’excellence. Some versions of the Type A construct emphasize excessive achievement
+motivation (Rosenman, Brand, Jenkins, Friedmn, Straus & Wurm, 1975), although there is now
+convincing evidence that high need for Achievement is not a risk factor for coronary disease
+(Matthews & Haynes, 1986).
+   We view Self-discipline primarily in terms of persistence, the ability to continue with a task
+despite boredom or other distractions (compare Lorr’s Persistent scale). Individuals low in
+Self-discipline are prone to procrastination, and they quickly give up when faced with frustration.
+Self-discipline is one aspect of self-control, but self-control is a broader construct which also
+includes aspects of Neuroticism. A factor analysis of self-control scales (McCrae & Costa, 1985b)
+suggested that the inhibition of urges and impulses (to eat, smoke, spend money) is more closely
+related to N than to C, and Impulsiveness in the NEO-PI is a facet of N. Self-Discipline refers to a
+more proactive perseverance in tasks that are not immediately appealing, and is an element of C.
+890                                       PAUL T. COSTAJR et al.
+
+
+  Finally, Deliberation means caution, planning, and thoughtfulness. This facet can be contrasted
+with Buss and Plomin’s (1975) Quick Decision Time and with some of the more cognitive
+conceptions of reflection-impulsivity  (Kagan, 1966). Lorr included Deliberate among his ISI
+Self-Control scales.
+
+                        SCALE    DEVELOPMENT:              PILOT   STUDIES
+
+First pilot study: A and C facet scales
+   Based on these conceptualizations,    152 items were written to measure the 12 A and C facets.
+These items were intended to supplement the 36 A and C items in the current NEO-PI, with equal
+numbers of positively and negatively keyed items for each proposed facet. We will refer to these
+a priori scales as the Phase I facets. The 188 items were administered to a sample of 93 men, aged
+32-91, and 123 women, aged 28-82 (Costa & McCrae, 1989b). The Ss, who were described by
+McCrae and Costa (1987), were initially recruited as peer raters for participants in the Baltimore
+Longitudinal Study of Aging (BLSA; Shock, Greulich, Andres, Arenberg, Costa, Lakatta & Tobin,
+1984). In 1986 they provided self-report data on the NEO-PI, the Personality Research Form
+(Jackson, 1984), and the Buss-Durkee Hostility Inventory; in 1987 they completed the Millon
+Clinical Multiaxial Inventory (MCMI; Millon, 1983) and the California Psychological Inventory
+(CPI; Gough, 1987), as well as the Phase I facets. As in the NEO-PI, items were answered on a
+five-point Likert scale from ‘strongly disagree’ to ‘strongly agree’.
+   Analyses of these data generally supported the conceptual model of the facets. Joint factor
+analysis of the Phase I scales and NEO-PI scales showed that 10 of the 12 scales had their highest
+loading on the appropriate factor. A series of item analyses were then undertaken to select the best
+eight items for each facet. Items more highly related to unintended factors were eliminated, and
+item factor analyses were then conducted within A and C item pools separately. These analyses
+supported the conceptual distinctions among the facets, and led to the development of Phase II
+scales composed of the original 36 A and C items and 60 of the new trial items.
+   Estimates of internal consistency for thePhase II scales ranged from 0.64 for Tender-Mindedness
+to 0.84 for Self-Discipline; Coefficient alpha for the 48-item Agreeableness score formed by
+summing the Phase II facets was 0.88; for Conscientiousness, it was 0.92. Correlations of the facets
+with the MCMI Personality Disorder Scales, the PRF Needs, the revised CPI scales, and the
+Buss-Durkee Hostility Inventory scales showed preliminary evidence of convergent and discrimi-
+nant validity (Costa & McCrae, 1990; McCrae, Costa & Piedmont, submitted). For example, Trust
+was negatively related to BDHI Suspicion, Compliance was negatively related to PRF Aggression,
+and Modesty was negatively related to PRF Exhibition (all Ps <O.OOl). There were strong
+correlations between Order and PRF Order (r = 0.71), Achievement Striving and PRF Achieve-
+ment (r = 0.59) and Deliberation and PRF Cognitive Structure (r = 0.43).
+
+Second pilot study: revisions of N, E, and 0 facets
+   The addition of A and C facet scales provided an opportunity to revise the existing N, E, and
+0 facet scales. Since publication in 1985, it has become clear that a few items were misplaced. For
+example, the item ‘Others think of me as being modest and unassuming’ is currently scored as (low)
+Assertiveness; it is now clear that it is better thought of as a Modesty item. A few other items
+showed low item-total correlations. To refine the N, E, and 0 facet scales, a second pilot study
+was conducted using volunteers from the BLSA and their spouses.
+   In 1990, 222 men aged 29-96, and 172 women aged 23-93 completed a 120-item questionnaire
+that consisted of the 60 new Phase II A and C facet items, 36 additional A and C trial items,
+and-of particular concern here-24 trial N, E, and 0 items. The Ss had previously completed
+the NEO-PI in 1986 (Costa & McCrae, 1988); a joint analysis of the items from the two
+administrations was conducted. A conservative item selection strategy was adopted: to replace a
+NEO-PI item, the proposed new item had to show better convergent and discriminant validity with
+NEO-PI scales despite the fact that it was administered 4yr later. Ten items met this criterion,
+leading to changes of two items each for the Hostility, Gregariousness, and Assertiveness scales
+and of one item each for the Activity, Excitement Seeking, and Openness to Feelings and Actions
+scales. These 10 changes substantially improved the factor structure of the facets.
+                              Facets of Agreeableness and Conscientiousness                       891
+
+                                              STUDY       1
+Method
+   Subjects. As part of a study of job performance predictors, 1825 men and women employed by
+a large national organization were administered the NEO-PI and supplementary items. Of these,
+1760 (96%) had complete and valid personality data; however, 221 Ss did not specify sex, and so
+were excluded from the analyses. The final sample of 1539 included 543 men and 996 women. Most
+of the Ss (7 1.1% of the men and 68.3% of the women) were white, but a substantial minority were
+black (16.4% of the men and 22.8% of the women). Half of the women and three-quarters of the
+men had college degrees; virtually all Ss were high-school graduates. The men ranged in age from
+21 to 63 (M = 32.3, SD = 8.8); the women from 21 to 64 (M = 33.4, SD = 9.2). This sample is thus
+considerably younger, had less formal education, and is more racially diverse than the BLSA
+samples on which the NEO-PI was developed.
+   Measures and procedure. The NE0 Personality Inventory (NEO-PI; Costa & McCrae, 1985,
+1989a) is a 181-item questionnaire developed through rational and factor analytic methods to
+measure the five-factor model of personality. Scales are balanced to control for the effects of
+acquiescence, and a series of studies have shown that scores are not strongly influenced by socially
+desirable responding when administered to volunteers (e.g. McCrae & Costa, 1983). Scales show
+adequate internal consistency and are stable over a 6-year period (Costa & McCrae, 1988). The
+instrument has been reviewed by Hogan (1989) and Leong and Dollinger (1990). Subjects were also
+administered the 120-item questionnaire used in the second pilot study which included trial items
+for revising N, E, and 0 facet scales and items intended to measure facets of A and C. The two
+instruments were combined and completed by Ss during time provided by their employer. Subjects
+were assured that responses would remain confidential, and that results would have no effect on
+their job evaluation.
+   Subjects were also administered the Janis-Field Self-Esteem scale (Robinson & Shaver, 1973)
+the Rotter (1966) Locus of Control scale, and six scales from the Revised CPI (Gough, 1987):
+Capacity for Status, Social Presence, Self-Acceptance, Achievement via Conformance, Achieve-
+ment via Independence, and Work Orientation. These scales were used as criteria to examine
+validity of the NEO-PIR scales in this sample.
+
+Results and discussion
+   Items from the Phase II A and C scales were supplemented by 36 new trial A and C items and
+four items previously assigned to facets of N and E. Factor analyses were conducted separately
+for A and C items, extracting and rotating six factors in each case. To control for acquiescent
+responding, an index was created by summing all 300 items in the combined inventories without
+regard for keying direction; this index was partialled from the item correlation matrix before
+factoring in all the item analyses reported here. These analyses were generally consistent with the
+intended structure of the facets: five of the six proposed A facets and five of the six proposed C
+facets were recovered. (The exceptions were Straightforwardness and Self-Discipline, which were
+related to several of the obtained factors.) Final, Phase III, item selection was based on (a) factor
+loadings in this analysis and in subsequent analyses on reduced sets of items; (b) the mandatory
+inclusion of items used in the short form of the NEO-PI, the NE0 Five-Factor Inventory; and
+(c) the requirement that no more than six of the eight items on any scale be keyed in the same
+direction. These considerations led to changes of l-3 items on 10 of the A and C facet scales; no
+changes were made for Trust or Achievement Striving.
+   Because the NEO-PI has been extensively validated and the Phase II A and C scales have shown
+preliminary evidence of validity, the correlations between the original scales and the corresponding
+revised scales are of interest in establishing    the validity of the latter. The revised scales were
+therefore correlated with the original NEO-PI and Phase II scales. For the seven N, E, and 0 facet
+scales with item changes suggested by the second pilot study, these equivalence correlations ranged
+between 0.93 and 0.95; for the 10 A and C facet scales that were changed, the correlations ranged
+from 0.78 to 0.97 (median = 0.88). When the original NEO-PI domain scores were correlated with
+the new domain scores, the equivalence correlations were 1.0, 0.99, 0.99, 0.84, and 0.89 for N, E,
+0, A, and C, respectively. The very high correlations for the N, E, and 0 domains reflect the fact
+892                                        PAUL T. COSTA JR et al.
+
+
+ that the great majority of items in the two versions are the same; however, because the original
+ A and C domain scales contain only 18 items whereas the revised scales contain 48 items, the A
+ and C correlations cannot be attributed solely to item overlap.
+    The Revised NEO-PI (NEO-PIR) consists of 240 items that define 30 eight-item facet scales
+ grouped into five domains. Would an item factor analysis recover these scales? It should be noted
+ that although the present sample was used in the selection of A and C items, it was not used in
+ the selection of N, E, or 0 items, and thus constitutes a strict cross-validation sample for the latter
+ domains. When five Varimax factors were extracted, they correspond to the hypothesized factors;
+ the correlations of the factor scores with the corresponding domain scale scores were 0.91, 0.89,
+ 0.95, 0.95, and 0.89, respectively, for N, E, 0, A, and C.
+    Item analysis at the facet level is a much more stringent test of the model, because five groups
+ of six correlated factors are hypothesized, each with only eight single-item markers. When 30
+ Varimax factors were examined from the 240-item matrix, three were broad factors representing
+ N, C, and a combination of E and A items. Even in this analysis, however, 15 of the facet scales
+ were clearly recovered, with correlations between facet scales and factor scores of 0.66-0.90.
+    Orthogonal Procrustes analysis (Schbnemann, 1966) may offer a more reasonable approach to
+ determining the degree of consistency between the hypothesized and observed item structures. In
+ this analysis, the 30 Varimax factors were rotated to a target of Is, - Is, and OS,based on the item
+ scoring key. This rotation showed an excellent fit. A total of 206 of the 240 items had their largest
+ loading on the intended factor, including a majority of items from each facet scale. For the 48-item
+ domain scales, 39 N items, 40 E items, 45 0 items, 41 A items and 41 C items had their largest
+ loading on the intended factor. The 30 convergent correlations between the factors and correspond-
+ ing facet scale scores ranged from 0.54 to 0.89, with a median of 0.72; by contrast, the largest of
+ the 870 discriminant correlations was 0.34. It appears that the fine-grained conceptual distinctions
+ embodied in the NEO-PIR facets are consistent with the factor structure of the items.
+    Coefficient alphas for the domain scales in the full sample were 0.92, 0.89, 0.87, 0.86. and 0.90,
+ respectively, for N, E, 0, A, and C. Reliabilities for the facet scales are given in Table 1; they range
+ from 0.56 to 0.81, with a median of 0.71. For eight-item scales, these are reasonable values. The
+ relatively low values for the Tender-Mindedness and Compliance facets of A suggest that particular
+ attention will be needed in the validation of these scales in Study 2.
+    Table 1 also presents the results of a factor analysis of the 30 facet scales. Five principal
+ components had eigenvalues greater than 1.0 and together accounted for 58% of the variance; a
+ scree test clearly indicated the presence of five factors. After Varimax rotation, all facet scales have
+ their highest loading on the intended factor. Despite the fact that all facets could be distinguished
+ in a factor analysis of the items, they clearly covary at a broader level to form the five factors. There
+ are six large secondary loadings, but all are understandable: for example, the loadings of Activity
+ on C, Altruism on E, and Hostility on A reflect the facts that conscientious people keep busy, that
+extraverts are friendly and helpful, and that disagreeable people are often angry.
+    The size and diverse composition of this sample makes it possible to examine the replicability
+ of this factor structure across different groups. Because most research on the NEO-PI has employed
+samples that are predominantly white, older adults, it is of particular interest to examine the factor
+ structure in young adult (i.e. 21-29 years) and non-white subsamples. Separate factor analyses were
+conducted for men and women, for younger (n = 708) and older (n = 823) Ss, and for white
+ (n = 1042) and non-white (n = 462) Ss, and factor congruence coefficients (Wrigley & Neuhaus,
+ 1955) were calculated between each contrasted pair. Of these 15 coefficients, 14 were 0.95 or above;
+the 15th, for the A factor in whites vs non-whites, was 0.91.
+    Previous analyses have shown factorial invariance for the N, E, and 0 facet scales across age
+and sex groups (e.g. McCrae & Costa, 1983), but this is the first demonstration of the factorial
+validity of the NEO-PI in a non-white sample. It is perhaps not surprising that the factor structure
+of the NEO-PIR is so robust: it was developed on the basis of a large body of research which has
+recovered the five-factor model of personality in several different cultures, languages, and age
+groups. Factorial invariance in the NEO-PI is a necessary, though not sufficient, criterion for
+judging the success with which the instrument reflects the model.
+    Some evidence of validity of the NEO-PIR scales is given in Table 2, which shows correlations
+with other scales administered to this sample. Self-esteem is strongly, and predictably, related to
+                                             Facets of Agreeableness and Conscientiousness                                                              893
+
+                                  Table    I. Internal    consistency     and factor loadings     for NEO-PIR             facets
+                                                                                                     Factor
+                                                            coefficient
+                      NEO-PIR      scale                       aloha           N          E               0               A          C
+                      NI:   Anxiety                                 78          a2       -03             -02            01          -08
+                      N2:   Hostility                               75          68       -I2               00         -46           -07
+                      N3:   Depression                              81          80       -17               00         -01           -25
+                      N4:   Self-Consciousness                      68          72       -24             -07            08          -19
+                      N5:   Impulsiveness                           70          55          24              10        -16           -35
+                      N6:   Vulnerability                           77          70       -- 16           - I4         -03           -40
+                      El:   Warmth                                  73        -08          14               I2          30            16
+                      E2:   Gregariousness                          12        -16          72            -03            01            01
+                      E3:   Assertiveness                           77        -31          48              13         -33             40
+                      E4:   Activity                                63        -03          51               17        -19             48
+                      ES:   Excitement Seeking                      65          01         57              24         -34           -08
+                      E6:   Positive Emotions                       73        -07          13              24            I6           II
+                      01:   Fantasy                                 76          21         16              60         -14           -30
+                      02:   Aesthetics                              76          II         03              16           I2            II
+                      03:   Feelings                                66          41         37              52           00            13
+                      04:   Actions                                 58        -23          21              60           03            03
+                      05:   Ideas                                   80        -18        -04               76         -08             I7
+                      06:   Values                                  67        -06          10              54         -03           -14
+                      Al:   Trust                                   79        -30          37              I2             49           05
+                      AZ:   Straightforwardness                     71        -02        -08             -08              70           19
+                      A3:   Altruism                                75        -05          48              00             59           27
+                      A4:   Compliance                              59        -19          00            -06              74        -01
+                      AS:   Modesty                                 67          14       -21             -05              59        -I2
+                      A6:   Tender-Mindedness                       56          01         21               II            61           09
+                      Cl:   Competence                              67        -38          21                I5         09            62
+                      C2:   Order                                   66           02        07            -18            01            69
+                      C3:   Dutifulness                             62        -21          01            -02            25            69
+                      C4:   Achievement Striving                    67        -I2          18                15       -09             16
+                      CS:   Self-Discipline                         75        -34          14               00          I2            14
+                      C6:   Deliberation                            71        -33        -20             -II            22            58
+                      n = 1539. These are Varimax-rotated  principal components.                    Decimal        points are omitted.
+                          Loadings over f0.40 are given in boldface.
+
+
+
+
+low N, high E, and high C (compare McCrae & Costa, 1988). Among the A and C facets, it is
+most highly correlated (as hypothesized) with Competence, r = 0.59, and with Self-Discipline,
+r = 0.50, and Achievement Striving, r = 0.41. External Locus of Control scores are related to N
+and low C. All six of the C facet scales are significantly negatively related to Locus of Control,
+but, as hypothesized, the association is strongest with the Competence facet of C, r = -0.29.
+   Correlations with the CPI scales generally replicate findings reported elsewhere (McCrae,
+Costa & Piedmont, submitted). As in that study, Capacity for Status, Social Presence, and
+Self-Acceptance are chiefly related to E and 0; Achievement via Conformance to low N and high
+C; and Achievement via Independence to 0. Work Orientation, which was not examined in the
+earlier study, is related chiefly to low N and high A and C in the present sample. Of these six scales,
+Achievement via Conformance and Work Orientation are most relevant to the evaluation of A and
+C facets. Achievement via Conformance is strongly and appropriately related to Competence,
+Dutifulness, Achievement, and Self-Discipline, rs = 0.40-0.49; Work Orientation is related chiefly
+to the Trust facet of A, r = 0.41, and the Competence facet of C, r = 0.42.
+
+
+                                  Table 2.   Correlations        of NEO-PIR     domain   scales with criterion            scales
+                                                                                       NEO-PIR      domain        scale
+        Criterion
+        scale                                                N                  E                   0                         A                 C
+        Self-Esteem                                      -0.69***             0.49***             0.16***                  O.IZ”’             0.51***
+        Locus of Control                                   0.35***          -0.12***            -0.05.                -0.12***              -0.25**’
+        CPI scales
+          Capacity for Status                            -0.38***             0.43***             0.48***               0.04                  0.23”’
+          Social Presence                                -0.2s***             0.52***             0.41 l **           -0.15***                0.09***
+          Self-Acceptance                                -0.29**’             0.52***             0.39***             -0.12***                0.21***
+          Achievement via Conformance                    -0.478..             0.22***             0.07**                0.30***               0.55***
+          Achievement via Independence                   -0.30”’              0.15***             0.42***               0.12***               0.14***
+          Work Orientation                               -0.56***             0.14***             0.0 I                 0.36***               0.39***
+        n = 1491-1541.      lP < 0.05; l*P < 0.01; l**p < 0.001.
+894                                       PAUL T. COSTAJR et   al.
+
+                                               STUDY      2
+
+   It is necessary to have external criteria to evaluate the convergent and discriminant validity of
+the new A and C facet scales, and the archives of the BLSA offer a number of relevant and useful
+criteria, including several standard personality questionnaires. Study 2 examines the relations of
+the new facet scales to these instruments. In addition, we consider correlations among the five
+domain scales.
+
+Method
+   Subjects. The 394 BLSA participants and spouses from the second pilot study for the selection
+of new N, E, and 0 items served as Ss in this study. It should be noted that these Ss were not
+involved in the selection of A and C facet items. BLSA participants are generally healthy,
+predominantly white, well-educated, community-dwelling adults (Shock et al., 1984). All are
+volunteers who have agreed to periodic psychological and biomedical testing; over the past 30 yr
+they have provided data on a wide variety of instruments.
+   Measures. Participants completed the NEO-PI in 1986 and the additional 120 items administered
+in Study 1 in 1990; item responses were pooled to score the A and C facets. Domain scales for
+A and C are calculated by summing the facet scales for each. Between 1960 and 1978 men in the
+BLSA completed the Guilford-Zimmerman        Temperament Survey (GZTS; Guilford, Zimmerman
+& Guilford, 1976) while visiting the Gerontology Research Center. Between 1979 and 1987 both
+male and female participants completed a variety of questionnaires at home and returned them by
+mail. These included the Eysenck Personality Inventory (EPI; Eysenck & Eysenck, 1964) and a new
+scale developed by the Eysencks to measure Psychoticism (see McCrae & Costa, 1985a); the
+Myers-Briggs Type Indicator (MBTI; Myers & McCaulley, 1985); the Adjective Check List (Gough
+& Heilbrun, 1983), from which the 15 Murray need scales were scored; the Sensation Seeking Scales
+V (SSS-V; Zuckerman, 1979); the Revised Interpersonal Adjective Checklist (Wiggins, Trapnell &
+Phillips, 1988); and the Buss-Durkee Hostility Inventory (BDHI; Buss & Durkee, 1957).
+
+Results   and discussion
+   Tables 3 and 4 present correlations between Agreeableness and Conscientiousness domain and
+facet scales and the criterion scales. Only criterion scales with at least one correlation of 0.30 or
+greater in absolute magnitude are reported in the tables. Among the scales that showed no
+correlation this large with any of the A or C scales were EPI Neuroticism, GZTS Emotional
+Stability, and GZTS Ojectivity (all measures of N); EPI E, MBTI Introversion-Extraversion,            and
+GZTS Sociability (measures of E); and MBTI Sensation-Intuition           and SSS-V Experience Seeking
+(measures of 0). These findings support the discriminant validity of the A and C scales with respect
+to the other major factors.
+   The first two columns in Table 3 compare correlations for the original 18-item NEO-PI A domain
+scale and the revised 48-item A scale. The correlations are very similar, supporting the view that
+the new scale retains the validity of the older scale. Both columns show clear evidence of convergent
+validity of the A domain scales, the largest correlates being with ACL needs for Nurturance and
+Deference, IAS-R Unassuming-Ingenuous vs Arrogant-Calculating             scales, and low BDHI Assault
+and Verbal Hostility.
+   In general, the revised scale shows larger correlations than the original (mean absolute r values
+using z transformation are 0.38 and 0.35), but these modest improvements could not themselves
+justify the increased length of the scale. The advantage of the NEO-PIR is the availability of
+facet scales that measure distinct aspects of the broader domain. The remaining columns of
+Table 3 give evidence of the validity-particularly     the discriminant validity-of    these facet scales.
+Individuals scoring high in Trust are high in GZTS Personal Relations and low in Psychoticism
+and especially BDHI Suspicion. High Straightforwardness             scores are particularly associated
+with the Unassuming-Ingenuous        scale of the IAS-R, whereas low scores are associated with the
+Arrogant-Calculating     scale and BDHI Indirect Hostility. Altruism is related to ACL Nurturance
+and the IAS-R Warn-Agreeable        scale; Compliance is positively related to GZTS Friendliness and
+ACL Deference, and negatively related to ACL Autonomy and Aggression and BDHI Assault and
+Verbal Hostility. Individuals scoring high in Modesty are high in the need for Abasement and low
+                                                          Facets of Agreeableness                  and Conscientiousness                                                                           895
+
+                                     Table    3. Selected    correlations        of NEO-PIR        Agreeableness                  scales with criterion         scales
+                                                                         A domain                                                             A facet
+
+       Criterion         scale                               Original              Revised               Al             A2               A3             A4               A5            A6
+       Psychoticism                                               -33                  -33          -32                -25              -31         -17              -13           -18
+
+       MBTI Thinking-Feeling                                        35                   38              25                  I2            30             23             23            39
+
+       ACL
+         Intraception                                               42                   41               34                 27           38              37            IV              I8
+         Nurturancc                                                 51                   55               39                 29           51              45           23              34
+         Affiliation                                                36                   39               35                 I7           40              36           I2              I9
+         Exhibition                                               -22                  -26           -01’              -27              -04’        -31              -32               02’
+         Autonomy                                                 -49                  -49          -25                -29              -33         -50              -31           -21
+         Aggression                                               -40                  -47          -20                -35              -25         -52              -32           -14
+         Abasement                                                  24                   27          -01’                    22           08’             28           32              I2
+          Deference                                                 42                   47               19                 32           27              47           36              I7
+
+       GZTS
+          Ascendance                                              -06’                 -10’               I 5’         -21                 I8       -30               -17’             07’
+          Friendliness                                              26                   36               13’                31            13’            51            2s             06’
+         Thoughtfulness                                             21                   29               I9                 IO’           24             17            14             33
+          Personal         Relations                                22                   20               39                 21            05’            II’         -01’             07’
+
+       sss-v
+          Disinhibition                                           -23                  -37          -17                -37              -22         -24              -32           -l(r
+          Boredom           Susceptibility                        -28                  -32           -12’              -34              -19         -27              -17           -13
+
+       IAS-R
+          Arrogant-Calculating                                    -50                  -58          -26                -54              -38         -4s              -37           -24
+          Cold-hearted                                            -55                  -56          -37                -36              -58         -28              -23           -44
+          Aloof-Introverted                                       -33                  -32          -26                -16              -48         -16                04’         -34
+          Unassuming-Ingenuous                                      41                   49               23                 48           23              39           35               18
+          Warm-Agreeable                                            48                   47               29                 24           60              I9           20              43
+          GregariousExtraverted                                     26                   23               31                 04’          42              06’        -08’              29
+
+       BDHI
+          Assault                                                 -37                  -46          -21                -35              -21         -47              -31           -22
+          Indirect        Hostility                               -29                  -37          -21                -32              -27         -29              -21           -14
+          Irritability                                            -37                  -37          -38                -24              -28         -37              -05’          -    I7
+          Resentment                                              -25                  -20          -36                -I2              -21         -II                03’         -08’
+          Suspicion                                               -36                  -25          -46                - 08’            -27         -17                07*         -13
+          Verbal         Hostility                                -46                  -49          -I5                -34              -26         -63              -32           -14
+
+       For GZTS,            n = 126-135 men. For all other scales, n = 215-377                            men and women.                 Except    as noted,        all correlations         are
+              significant        at    P < 0.05.        Decimal         points   are    omitted.   Al.        Trust;    AZ,         Straightforwardness;           A3,     Altruism;         A4,
+              Compliance;             A5,    Modesty:     A6,     Tender-Mindedness.
+       ‘Not     significant.
+
+
+
+
+in the need for Exhibition; IAS-R correlations suggest that they are unassuming rather than
+arrogant. Finally, Tender-Mindedness        shows a distinctively large correlation with the MBTI
+Thinking-Feeling scale, suggesting that high scorers are governed more by their feelings than
+by cold logic. The cold-heartedness of low scorers is seen in the IAS-R correlates. The pattern
+of correlations of all the scales support their convergent and discriminant validity; this is
+particularly noteworthy for Compliance and Tender-Mindedness,              which have relatively low
+internal consistencies.
+   The first two columns of Table 4 provide evidence on the validity of the original and revised
+C domain scales. Conceptually, the most relevant criteria in the table are ACL needs for
+Achievement, Order, and Endurance; they are also the strongest empirical correlates. Across all
+criteria, the revised scale shows stronger correlations than the original (mean absolute r = 0.36 and
+0.31). Correlations of the criterion scales with the C facets show that Competence is associated with
+IAS-R Assured-Dominant         and ACL needs for Achievement and (low) Succorance: competent
+people are confident, accomplished, and able to take care of themselves. NEO-PIR Order is most
+strongly related to ACL Order; it is also strongly related to the MBTI Judging-Perceiving scale,
+which measures preference for structured vs spontaneous decision-making. Dutifulness is related
+to ACL Order and Endurance; it also shows a distinctive negative correlation with SSS-V
+Disinhibition, which is consistent with the view that this facet measures in part the restraining
+influence of conscience. Achievement Striving is most highly related to ACL Achievement; it is also
+related to GZTS General Activity. Self-Discipline is the best predictor of ACL Endurance among
+the facet scales, and Deliberation is appropriately related to MBTI Judging-Perceiving, (low) ACL
+Change, and GZTS Restraint.
+   The many substantial correlations between facets of C and IAS-R scales are somewhat
+surprising, because the interpersonal circumplex which the IAS-R measures is usually conceptualized
+896                                                          PAUL T. COSTAJR et al.
+
+                           Table 4. Selected correlations of NEO-PIR Conscientiousness                   scales with criterion scales
+                                                        C domain                                                   c facet
+       criterion   scale                        Original           Revised           Cl          c2           c3             c4          C5    C6
+       Psychoticism                               -27                -33           -23          -20          -30         - I4         -30     -28
+       MBTI Judging-Perceiving                    -38               -41            -18          -44         -34          -24          -23     -39
+       ACL
+        Achievement                                 51                58             48           32          34           58           55      23
+         Dominance                                  31                39             37            I6         21           43           39      09’
+         Endurance                                  58                65             43           44          48           48           54      44
+        Order                                       55                61             39           48          46           36           47      50
+         Intraception                               30                34             29            09’        35           I8           28      33
+        Affiliation                                 22                29             28            06”        26           I2           32      20
+        Change                                    -14               -17            -02’         -20         -18            02’        -07’    -30
+        Succorance                                -32               -38            -40          -15         -30          -28          -35     -19
+        Abasement                                 -21               -28            -34          -I2         -13          -28          -28     -06a
+       GZTS
+        General Activity                            27                  29           29         -02’           25            47          33   -19
+         Restraint                                  26                  35           151          091          31            28          23     35
+        Ascendance                                  21                  22           26           03”          15’           35          I9   -08’
+       sss-v
+          Disinhibition                           -22               -24             -II’        -02’        -36          -09’         -19     -29
+          Boredom Susceptibility                  -16               -20             -07”        -12’        -22          -03’         -15     -31
+       IAS-R
+         Assured-Dominant                           35                41             42            I6         25          51            38       04’
+         Cold-hearted                             -32               -31            -28          -14         -36         - I9          -27     -13
+         Aloof-Introverted                        -35               -37            -34          -16         -32         -32           -37     -IIa
+         Unassured-Submissive                     -26               -31            -31          -II’        -18         -41           -29     -05’
+         Warn-Agreeable                             34                31             26            I4         33          26            26       12’
+         Gregarious-Extraverted                     26                28             27            II’        I7          34            37    - 06’
+       BDHI
+        Indirect Hostility                        -29               -32            -12          -16         -34         -I8           -31     -26
+        Irritability                              -23               -36            -33          -19         -29         -II           -31     -32
+       For GZTS, R = 126-135 men. For all other scales, n = 215-377 men and women. Except as noted, all correlations are
+           significant at P < 0.05. Decimal points are omitted. Cl, Competence; C2, Order; C3, Dutifulness; C4, Achievement
+           Striving; C5, Self-Discipline; C6, Deliberation.
+       ‘Not significant.
+
+
+in terms of the two dimensions of E and A (McCrae & Costa, 1989). However, an earlier version of
+the instrument (Wiggins, 1979) contrasted Ambitious-Dominant         with Submissive-Lazy, and the
+correlations with the Achievement Striving facet scale suggest that elements of ambition vs laziness
+remain in the revised Assured-Dominant        and Unassured-Submissive       scales, as seen in such
+adjectives as firm and persistent. These associations are not artifactual; instead, they demonstrate
+that traits in the domain of Conscientiousness have interpersonal implications. For example, indi-
+viduals who are highly competent and driven to succeed are more likely to be the leaders of groups.
+   Finally, intercorrelations  among the domain scales themselves were considered; these are
+presented in Table 5. As in previous research (Costa & McCrae, 1989a), there was a moderately
+large correlation between E and 0; there was also a substantial negative correlation between N
+and C. None of the other cross-domain correlations exceeded 0.25 in absolute magnitude. It should
+be noted in particular that the correlation between A and C is only 0.13; it is thus unlikely that
+these two domains represent different aspects of a single broader factor such as Psychoticism
+(McCrae & Costa, 1985a).
+
+                                                    GENERAL                   DISCUSSION
+
+  Although the need for scales measuring specific aspects of all five broad personality factors or
+domains has been recognized for some time, no published instrument has so far provided such
+
+                                             Table 5. Intercorrelations          of NEO-PIR domain scales
+                    NEO-PIR domain                   N                  E                  0                 A                    C
+                    Neuroticism                     1.00           -0.21***           0.05               -0.25**’             -0.49***
+                    Extraversion                                      I .oo           0.43***            -0.07                  0.22.”
+                    Openness                                                          1.00               -0.06                -0.04
+                    Agreeableness                                                                           I .oo               0.13.
+                    Conscientiousness                                                                                            1.00
+                    n = 394. lP     <   0.05; l*f < 0.01;   ***p    c   0.001.
+                                             Facets   of Agreeableness      and Conscientiousness                                                897
+
+
+scales. The Revised NE0 Personality Inventory (NEO-PIR) is intended to correct this problem by
+offering six facet scales to measure each of the five domains. An analysis of the personality literature
+was used to identify specific traits that appeared to be theoretically important, and scales were
+created to operationalize these constructs. Item factor analyses in a large and diverse sample
+suggested that the scales empirically reproduce the distinctions embodied in the facets, and factor
+analyses of the scales clearly recovered the five-factor model itself. Studies of convergent and
+discriminant validity with other self-report questionnaire scales in a second sample provided
+supportive evidence for the new A and C facets.
+   Previous studies of the NEO-PI have shown convergence across spouse and peer observers for
+all five domains and for the facets of E, N, and 0 (e.g. Costa & McCrae, 1988). Future studies
+should examine the cross-observer validity of the new A and C facets. In addition, studies of these
+new facets in clinical samples would be especially valuable, both as part of the process of
+generalizing validity across populations and as part of the continuing exploration of the utility of
+the five-factor model in clinical psychology (e.g. Miller, in press). The analyses presented here
+provide encouragment for such studies.
+
+                                                              REFERENCES
+Adler, A. (1964). Social inreresf: a challenge 10 mankind. New York: Capricorn                        Books. (Originally published        1938.)
+Briggs, S. R. (1989). The optimal level of measurement                for personality     constructs.    In Buss, D. M. & Cantor, N. (Eds),
+     Personality psychology: recenl trends and emerging directions (pp. 246260).                    New York: Springer.
+Buss. A. H. & Durkee, A. (1957). An inventory for assessing different kinds of hostility. Journal ofconsulting Psychology,
+     21, 343-348.
+Buss, A. H. & Plomin, R. (1975). A temperament theory of personality decelopment. New York: Wiley.
+Cattell, R. B., Eber, H. W. & Tatsuoka,             M. M. (1970). The handbook for the Sixteen Personality Factor Questionnaire.
+    Champaign,      IL: Institute for Personality       and Ability Testing.
+Costa, P. T., Jr & McCrae, R. R. (1978). Objective personality                 assessment. In Storandt,        M., Siegler, I. C. & Elias, M. F.
+    (Eds). The clinical psychology of aging (pp. 119-143). New York: Plenum.
+Costa, P. T., Jr & McCrae, R. R. (1980). Still stable after all these years: personality                  as a key to some issues in adulthood
+    and old age. In Baltes, P. B. & Brim, 0. G., Jr (Eds), L,i/e span deoelopmenr andbehacior (Vol. 3, pp. 65-102). New York:
+    Academic Press.
+Costa, P. T., Jr & McCrae, R. R. (1985). The NE0 Personality Imentory manual. Odessa, FL: Psychological                                 Assessment
+     Resources.
+Costa, P. T., Jr & McCrae, R. R. (1988). Personality in adulthood:                 a six-year longitudinal     study of self-reports and spouse
+    ratings on the NE0 Personality           Inventory. Journal of Personalily and Social Psychology, 54, 853-863.
+Costa, P. T., Jr & McCrae,            R. R. (1989a). The NEO-PIINEO-FFI                   manual supplement. Odessa, FL: Psychological
+    Assessment Resources.
+Costa, P. T., Jr & McCrae,            R. R. (1989b). What lies beneath               the Big Five? Facet scales for Agreeableness                and
+    Conscientiousness.       In John, 0. P. (Chair),          The Big Five: historical perspecriue and current research. Symposium
+    conducted     at the Annual Meeting of the Society for Multivariate                 Experimental     Psychology,     Honolulu.
+Costa, P. T., Jr & McCrae,           R. R. (1990). Personality         disorders    and the five-factor      model of personality.       Journal of
+    Personality Disorders, 4, 362-37 1.
+Costa, P. T., Jr & McCrae, R. R. (in press). The NE0 Personality Inventory. In Briggs, S. R. & Cheek, J. (Eds), Personality
+    measures (Vol. 1). Greenwich,          CT: JAI Press.
+Costa, P. T., Jr, McCrae, R. R. & Dembroski,               T. M. (1989). Agreeableness        vs antagonism:      explication of a potential risk
+    factor for CHD. In Siegman, A. & Dembroski,                   T. M. (Eds), In search of coronary-prone behaoior: beyond TIpe A
+    (pp. 4163).     Hillsdale, NJ: Erlbaum.
+Digman, J. M. (1990). Personality structure: emergence of the five-factor model. Annual Review of Psychology, 41,417440.
+Digman, J. M. & Inouye, J. (1986). Further specification                of the five robust factors of personality.          Journal of Personality
+    and Social Psychology, SO, 116-123.
+Erikson, E. H. (1950). Childhood and society. New York: Norton.
+Eysenck, H. J. (1954). The psychology of polirics. London: Routledge & Kegan Paul.
+Eysenck, H. J. & Eysenck, S. B. G. (1964). Manual of the Eysenck Personalily Inventory. London: University Press.
+Eysenck, H. J. & Eysenck, S. B. G. (1975). Manual of the Eysenck Personality Questionnaire. San Diego: EdITS.
+Geis, F. (1978). Machiavellianism.          In London,       H. & Exner, J. E., Jr (Eds), Dimensions of personality (pp. 305-364).
+    New York: Wiley.
+Goldberg,    L. R. (1989). Standard markers of the Big-Five facror structure. Paper presented at the Invited Workshop                              on
+    Personality    Language,     University of Groningen,        Groningen,      The Netherlands.
+Goldberg.    L. R. (1990). An alternative        “description    of personality”:     the Big-Five factor structure. Journal of Personaliry
+    and Social Psychology, 59. 1216-1229.
+Gough, H. G. (1987). Cali/ornia Psychological Inventory administrafor’s guide. Palo Alto, CA: Consulting                             Psychologists
+    Press.
+Gough, H. G. 8~ Heilbrun, A. B., Jr (1983). Adjective Check List manual. Palo Alto, CA: Consulting                            Psychologists    Press.
+Guilford, J. S., Zimmerman,         W. S. & Guilford, J. P. (1976). The Guilford-Zimmerman Temperament Survey Handbook:
+    twenty-Jiae years of research and application. San Diego, CA: EdITS Publishers.
+Hartshorn,    H., May, M. A. & Maller, J. B. (1929). Studies in the nature of character, Vol. 2:studies in service andselfconrrol.
+    New York: MacMillan.
+ 898                                                           PALL T. COSTA JR et al.
+
+
+ Hogan, R. (1986). Hogan Personality Inoenfory manual. Minneapolis,                          MN: National Computer               Systems.
+ Hogan, R. (1987). Personality psychology:              back to basics. In Aronoff, J., Rabin. A. I. & Zucker, R. A. (Eds), The emergence
+      of personality (pp. 79-104). New York: Springer.
+ Hogan, R. (1989). Review of the NE0 Personality                     Inventory.    In Conoley, J. C. & Kramer, J. J. (Eds), The renfh menfal
+      measurements yearbook (pp. 546547).                Lincoln, NE: Buros Institute of Mental Measurements.
+ Jackson, D. N. (1984). Personalify Research Form manual (3rd edn). Port Huron, MI: Research Psychologists                                          Press.
+ John, 0. P. (1990). The “Big Five” factor taxonomy:                           dimensions     of personality        in the natural        language    and in
+      questionnaires.      In Pervin, L. (Ed.), Handbook of personalify fheory and research (pp. 666100). New York: Guilford.
+ Kagan, J. (1966). Reflection-impulsivity:            the generality and dynamics of conceptual tempo. Journal of Abnormal Psychology,
+       71, 17-24.
+ Leong, F. T. L. & Dollinger, S. J. (1990). NE0 Personality                      Inventory.    In Keyser, D. J. & Sweetland, R. C. (Eds), Tesf
+      Critiques (Vol. VIII, pp. 527-539). Austin, TX: PRO-ED.
+ Lorr, M. (1986). Inferpersonal Sfyle Invenfory (ISI) manual. Los Angeles: Western Psychological                                   Services.
+ Matthews, K. A. Kc Haynes, S. G. (1986). Type A behavior pattern and coronary disease risk: update and critical evaluation.
+      American Journal of Epidemiology, 123, 923-960.
+ McCrae, R. R. (1976). Self-control:            theories, techniques, and the example of increasing study time. Disserfafion Abstracfs
+      Infernafional, 37, 14lOB (University            Microfilms No. 7621, 292).
+ McCrae, R. R. (1990). Traits and trait names: how well is Openness represented                              in natural languages? European Journal
+      of Personalify, 4, 119-129.
+ McCrae, R. R. & Costa, P. T., Jr (1983). Social desirability                    scales: more substance than style. Journal of Consulring and
+      Clinical Psychology, 51, 882-888.
+ McCrae, R. R. & Costa, P. T., Jr (1985a). Comparison                       of EPI and Psychoticism           scales with measures of the five-factor
+      model of personality.        Personality and Individual Differences, 6, 587-597.
+McCrae, R. R. & Costa, P. T., Jr (1985b). Openness to experience. In Hogan. R. & Jones, W. H. (Eds), Perspecfices in
+     personalify (Vol. 1, pp. 145-172). Greenwich,                 CT: JAI Press.
+McCrae, R. R. & Costa, P. T., Jr (1987). Validation of the five-factor model of personality across instruments and observers,
+     Journal of Personalify and Social Psychology, 52, 81-90.
+McCrae, R. R. & Costa, P. T., Jr (1988). Age, personality,                   and the spontaneous        self-concept. Journal of Geronrology: Social
+      Sciences, 43, S I77-S185.
+McCrae, R. R. & Costa, P. T., Jr (1989). The structure of interpersonal                          traits: Wiggins’s circumplex and the five-factor
+      model. Journal of Personality and Social Psychology, 56, 586-595.
+McCrae,       R. R., Costa, P. T., Jr & Piedmont,                R. L. (submitted).       Folk concepts, natural language,              and psychological
+     constructs:     the California    Psychological      Inventory and the five-factor model.
+Mershon,       B. & Gorsuch,        R. L. (1988). Number of factors in the personality                    sphere: Does increase in factors increase
+     predictability     of real-life criteria? Journal of Personalify and Social Psychology, 55, 675480.
+Miller, T. (in press). The psychotherapeutic              utility of the five-factor model of personality:             a clinician’s experience. Journal
+     of Personalify Assessment.
+Millon, T. (1983). Millon Clinical Mulfiaxial Invenfory manual (3rd edn). Minneapolis,                             MN: Interpretive       Scoring Systems.
+Murray, H. A. (1938). Explorations in personalify. New York: Oxford University Press.
+Murray, H. A. & Kluckhohn,             C. (1953). Outline of a conception            of personality.     In Kluckhohn,       C. & Murray, H. A. (Eds),
+     Personality in nature, society, and culture (2nd edn, pp. 3-52). New York: Knopf.
+Myers, I. B. & McCaulley,            M. H. (1985). Manual: a guide IO fhe decelopment and use of the Myers-Brigss Type Indicafor.
+     Palo Alto, CA: Consulting           Psychologists      Press.
+O’Brien, E. J. & Epstein, S. (1974). Naturally occurring changes in self-esteem. Personalify and Social Psychology Bullefin.
+      I, 384386.
+Rest, J. R. (1979). Deuelopmenr in judging moral issues. Minneapolis,                       MN: University of Minnesota                Press.
+Robinson,      J. P. & Shaver, P. R. (1973). Measures of social psychological altitudes. Ann Arbor, MI: Institute for Social
+     Research.
+Rosenman,        R. H., Brand, R. J., Jenkins, C. D., Friedman,                 M., Straus, R. & Wurm, M. (1975). Coronary                     heart disease
+     in the Western Collaboration            Group Study: final follow-up experience of 8: years. Journal of fhe American Medical
+     Associafion, 233, 872-877.
+Rotter, J. B. (1966). Generalized               expectancies      for internal      versus external control          of reinforcement.        Psychological
+     Monographs, 80, (1).
+Schdnemann,         P. H. (1966). A generalized         solution of the orthogonal          Procrustes      problem. Psychometrika, 31, l-10.
+Shock, N. W., Greulich, R. C., Andres, R.. Arenberg, D., Costa, P. T., Jr, Lakatta. E. G. & Tobin, J. D. (1984). Normal
+     human aging: rhe Baltimore Longifudinal Study of Aging (NIH Publication                               No. 84-2450). Bethesda, MD: National
+     Institutes of Health.
+Snyder, M. (1974). Self-monitoring               of expressive behavior. Journal of Personalify and Social Psychology, 30, 526-537.
+Tellegen, A. & Wailer, N. G. (in press). Exploring personality                    through test construction:         development       of the Multidimen-
+     sional Personality Questionnaire.          In Briggs, S. R. & Cheek, J. M. (Eds), Personality measures: de~elopmenf and evaluation
+     (Vol. 1). Greenwich,        CT: JAI Press.
+Trapnell, P. D. & Wiggins, J. S. (1990). Extension of the Interpersonal                     Adjective Scales to include the Big Five dimensions
+     of personality      (IASR-BS). Journal of Personality and Social Psychology, 59, 78 I-790.
+White. R. W. (1959). Motivation              reconsidered:      the concept of competence.           Psychological Raien*, 66, 297-333.
+Wiggins, J. S. (i979). A psychological            taxonomy of trait-descriptive         terms: the interpersonal        domain. Journal of Personality
+    and Social Psychology, 37, 395412.
+Wiggins, J. S. & Trapnell, P. D. (in press). Personality                 structure: the return of the Big Five. In Briggs, S. R., Hogan, R.
+    & Jones, W. H. (Eds), Handbook of personality psychology. New York: Academic Press.
+Wiggins, J. S., Trapnell, P. & Phillips, N. (1988). Psychometric                   and geometric characteristics          of the Revised Interpersonal
+    Adjective Scales (IAS-R). Mulfiuariafe Behavioral Research, 23, 119-134.
+Wrightsman,        L. S. (1974). Assumpfions about human nature: a social-psychological approach. Monterey, CA: Brooks/Cole.
+Wrigley, C. S. & Neuhaus, J. 0. (1955). The matching of two sets of factors. Anzerican Psychologist, IO, 418419.
+Zuckerman,       M. (1979). Sensation seeking: beyond the opfimal level of arousal. New York: Erlbaum.
