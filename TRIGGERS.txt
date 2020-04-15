@@ -1,0 +1,39 @@
+TRIGGERS
+
+ALMOST ALL INFORMATIONS ARE IN METHOD->PARTICIPANTS OR METHOD->SUBJECTS
+
+Finding the number of participants / sex 
+    (N= x)
+    (n= x)
+    x individuals
+    x participants
+    number of x individuals
+    number of x participants
+    1000 men and women
+    a pool of x items
+    the sample included x Israeli students
+    a sample of x target participants
+    x students
+    x were women, y were men
+    1149 responses were returned
+    x respondents were female
+
+For age
+    ages ranged between x and y years
+    the men/ ranged in age from x to y
+    participants ages ranged from x year old to y years old
+    ages of participants ranged from x to y years
+    
+For nationality 
+    most participants were Black African, Indian...
+    Israeli(uppercase) students
+    the sample included substantial proportions of Asians or Asian Americans(upperletter!)
+
+For school
+    were high-school graduates
+    three-quarters of the men had college degrees
+    had less formal education
+    x undergraduates
+    x students
+    participants were drawn from a University population ->> students
+
