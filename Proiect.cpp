@@ -1,52 +1,124 @@
 #include <iostream>
 #include <regex>
 #include <string>
+#include <fstream>
+#include <Python.h>
+#include <algorithm>
+
+using namespace std;
 
 char symbols[7] = { ',', '.', '!', '?', ':', ';', '-' };
 
-void eliminateSymbol(std::string &s) {
+void eliminateSymbol(std::string& s) {
 	for (int i = 0; i <= 6; ++i)
 		if (symbols[i] == s.back())
 			s = s.substr(0, s.size() - 1);
 }
 
+bool BothAreSpaces(char lhs, char rhs) { return (lhs == rhs) && (lhs == ' '); }
+
+string getText(string s, string first, string last) {
+
+	unsigned start = s.find(first);
+	unsigned end = s.find(last);
+	string temp = s.substr(start, end - start);
+	temp = temp.substr(temp.find_first_of(first) + first.length());
+
+	std::string::iterator new_end = std::unique(temp.begin(), temp.end(), BothAreSpaces);
+
+	if (temp[0] == ' ') temp.erase(0,1);
+
+	temp.erase(new_end, temp.end()); //sterge spatiile multiple
+	temp.erase(std::remove(temp.begin(), temp.end(), '\n'), temp.end()); //sterge liniile multiple
+
+	return temp;
+}
+
+string getTextReg(string s, std::regex reg) {
+	std::smatch m;
+	string copy = s;
+	regex_search(copy, m, reg);
+	return m.str();
+}
+
+void cm(string command) {
+	const char* command2 = command.c_str();
+	system(command2);
+}
+
+void WordNet(string word) {
+	cm("C:");
+	cm("E:");
+	cm("cd TILN");
+	cm("cd Proiect");
+	cm("cd Proiect");
+	cm("cd Proiect");
+	cm("python WordNet.py " + word);
+}
+
+struct article {
+	std::string title;
+	std::string code;
+	std::string	contact;
+	std::string	dataType;
+	std::string	createdBy;
+	std::string	createdAt;
+};
+
+struct sample {
+	std::string gender;
+	float sd;
+	std::string nationality;
+	std::string name;
+	std::string createdBy;
+	std::string	createdAt;
+	int	size;
+	article article;
+	std::string	type;
+	std::string	education;
+	float avg;
+};
+
+struct variable {
+	std::string type;
+	float min;
+	float max;
+	float sd;
+	std::string details;
+	int o;
+	std::string name;
+	std::string createdBy;
+	std::string createdAt;
+	std::string sample;
+	float mean;
+	article article;
+};
+
 int main()
 {
-	std::string s("Since research has shown that age (Vinchur et al., 1998), gender (Bowen, Swim & Jacobs, 2000), and organizational tenure (Ng & Feldman, 2010) can be related to performance, we included these as control variables. To control for its possible quadratic effects as found by Grant(2013), we assessed positive affectivity (Watson et al., 1988), as it is closely related to the other facets of extroversion, such as warmth, gregariousness, and positive emotions (Nemanick & Munz, 1997). Cronbach`s Alpha for positive affectivity waas alpha = .81.");
-	std::smatch m;
-	std::string sCopy;
-	std::regex e("\\b(such as )([^ ]*)");
-	std::regex e1("\\b(has shown that )([^ ]*)");
+	std::regex articleYear1("\\b(')([A-Z][a-z]*(')([1]+[9]+[0-9]+[0-9]))");
+	std::regex articleYear2("\\b(')([A-Z][a-z]*(')([2]+[0-2]+[0-9]+[0-9]))");
+	std::regex year1("\\b([1]+[9]+[0-9]+[0-9])");
+	std::regex year2("\\b([2]+[0-2]+[0-9]+[0-9])");
+	std::regex title("\\b(')([A-Z][^] *)(')");
+	std::regex name("\\b([A-Z][a-z]*)");
+	std::regex e("\\b((n = )([^ ]*)())");
+	std::regex e1("\\b((N = )([^ ]*)");
 
-	sCopy = s;
-	std::string s1;
+	string path = "poppler-0.67.0\\bin";
+	string file_name = "exemplu_corelatii_3";
+	string str;
+	str = "cd " + path + " && pdftotext -layout -nopgbrk ..\\..\\" + file_name + ".pdf ..\\..\\" + file_name + ".txt";
+	const char* command = str.c_str();
+	system(command);
 
-	std::cout << "The following variables were found: " << std::endl;
+	fstream f(file_name + ".txt", fstream::in);
+	string s;
+	getline(f, s, '\0');
 
-	while (std::regex_search(sCopy, m, e)) {
-		for (std::string x : m)
-		{
-			int pos = x.find("such as ");
-			s1 = x.substr(pos + 1);
-		}
-		eliminateSymbol(s1);
-		std::cout << s1<<'\n';
-		std::cout << std::endl;
-		sCopy = m.suffix().str();
-	}
+	f.close();
 
-	sCopy = s;
 
-	while (std::regex_search(sCopy, m, e1)) {
-		for (std::string x : m) //std::cout << x << " ";
-		{
-			int pos = x.find("has shown that ");
-			s1 = x.substr(pos + 1);
-		}
-		std::cout << s1 << '\n';
-		std::cout << std::endl;
-		sCopy = m.suffix().str();
-	}
 
 	return 0;
 }
