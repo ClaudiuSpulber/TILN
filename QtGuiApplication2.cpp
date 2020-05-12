@@ -1,12 +1,5 @@
 #include "QtGuiApplication2.h"
-#include <qfiledialog.h>
-#include <qmessagebox.h>
-#include <regex>
-#include <iostream>
-#include <fstream>
-#include <algorithm>
-#include <QTextStream>
-#include <string>
+
 using namespace std;
 QString file_location = "";
 
@@ -540,6 +533,83 @@ string Gender(string s) {
 	} return temp;
 }
 
+string Type(string s) {
+
+	string temp = "";
+	std::regex a1("\\b((self-report))");
+	std::regex a2("\\b((individual))");
+	std::regex a3("\\b((dyadic))");
+	std::regex a4("\\b((objective))");
+	std::regex a5("\\b((heteroevaluation))");
+	std::regex a6("\\b((teams))");
+
+	if (ExtractString(s, "Materials and procedure", "Table 1") != "") {
+		temp = ExtractString(s, "Materials and procedure", "Table 1");
+		if (getTextReg(temp, a1) != "")
+			return getTextReg(temp, a1);
+		if (getTextReg(temp, a2) != "")
+			return getTextReg(temp, a2);
+		if (getTextReg(temp, a3) != "")
+			return getTextReg(temp, a3);
+		if (getTextReg(temp, a4) != "")
+			return getTextReg(temp, a4);
+		if (getTextReg(temp, a5) != "")
+			return getTextReg(temp, a5);
+		if (getTextReg(temp, a6) != "")
+			return getTextReg(temp, a6);
+	}
+
+	if (ExtractString(s, "Personality", "Academic performance") != "") {
+		temp = ExtractString(s, "Personality", "Academic performance");
+		if (getTextReg(temp, a1) != "")
+			return getTextReg(temp, a1);
+		if (getTextReg(temp, a2) != "")
+			return getTextReg(temp, a2);
+		if (getTextReg(temp, a3) != "")
+			return getTextReg(temp, a3);
+		if (getTextReg(temp, a4) != "")
+			return getTextReg(temp, a4);
+		if (getTextReg(temp, a5) != "")
+			return getTextReg(temp, a5);
+		if (getTextReg(temp, a6) != "")
+			return getTextReg(temp, a6);
+	}
+
+	if (ExtractString(s, "Keywords", "Abstract") != "") {
+		temp = ExtractString(s, "Keywords", "Abstract");
+		if (getTextReg(temp, a1) != "")
+			return getTextReg(temp, a1);
+		if (getTextReg(temp, a2) != "")
+			return getTextReg(temp, a2);
+		if (getTextReg(temp, a3) != "")
+			return getTextReg(temp, a3);
+		if (getTextReg(temp, a4) != "")
+			return getTextReg(temp, a4);
+		if (getTextReg(temp, a5) != "")
+			return getTextReg(temp, a5);
+		if (getTextReg(temp, a6) != "")
+			return getTextReg(temp, a6);
+	}
+
+	if (ExtractString(s, "Measures", "Results") != "") {
+		temp = ExtractString(s, "Measures", "Results");
+		if (getTextReg(temp, a1) != "")
+			return getTextReg(temp, a1);
+		if (getTextReg(temp, a2) != "")
+			return getTextReg(temp, a2);
+		if (getTextReg(temp, a3) != "")
+			return getTextReg(temp, a3);
+		if (getTextReg(temp, a4) != "")
+			return getTextReg(temp, a4);
+		if (getTextReg(temp, a5) != "")
+			return getTextReg(temp, a5);
+		if (getTextReg(temp, a6) != "")
+			return getTextReg(temp, a6);
+	}
+	return "";
+}
+
+
 
 string SplitFileName(string str)
 {
@@ -568,6 +638,14 @@ void QtGuiApplication2::on_pushButton_clicked()
 {
 	file_location = QFileDialog::getOpenFileName(this, "Open file", "C://", "pdf(*.pdf)");
 	QMessageBox::information(this, "Denumire fisier", file_location);
+}
+static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
+	int i;
+	for (i = 0; i < argc; i++) {
+		printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+	}
+	printf("\n");
+	return 0;
 }
 void QtGuiApplication2::on_pushButton_2_clicked()
 {
@@ -608,7 +686,51 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	cout << "Max age: " << age2 << endl;
 	cout << "Nationality: " << Sample.nationality << endl;
 	cout << "Genders: " << Sample.gender << endl;
-	cout << "SD: " << Variable.sd;
+	cout << "SD: " << Variable.sd << endl;
+	
+	Sample.type = Type(s);
+	cout << "Type: " << Sample.type << endl;
 	
 
+	QString article_title_str = QString::fromStdString(Article.title);
+	QString variables_str = QString::fromStdString(Variables(s));
+	QString participants_nr_str = QString::number(Snumber);
+	QString min_age_str = QString::number(age1);
+	QString max_age_str = QString::number(age2);
+	QString nationality_str = QString::fromStdString(Sample.nationality);
+	QString genders_str = QString::fromStdString(Sample.gender);
+	QString sd_str = QString::number(Variable.sd);
+	QString type_str = QString::fromStdString(Sample.type);
+
+	ui.article_title->setText(article_title_str);
+	ui.variables->setText(variables_str);
+	ui.participants_nr->setText(participants_nr_str);
+	ui.min_age->setText(min_age_str);
+	ui.max_age->setText(max_age_str);
+	ui.nationality->setText(nationality_str);
+	ui.genders->setText(genders_str);
+	ui.sd->setText(sd_str);
+	ui.type->setText(type_str);
+
+	sqlite3* db;
+	char** zErrMsg = 0;
+	string sql = "INSERT INTO samples ('type', 'min', 'max', 'SD', 'nationality', 'correlation','size', 'gender') VALUES ('" + Sample.type + "' , '" + to_string(age1) + "','" + to_string(age2) + "','" + to_string(Variable.sd) + "','" + Sample.nationality + "','" + Variables(s) + "','" + to_string(Snumber) + "','" + Sample.gender +
+		"'); INSERT INTO articles ('title') VALUES ('" + Article.title +
+		"'); INSERT INTO variables ('type', 'min', 'max', 'sd') VALUES ('" + Sample.type + "','" + to_string(age1) + "','" + to_string(age2) + "','" + to_string(Variable.sd) + "');";
+
+	sqlite3_stmt* stmt;
+	int rc = sqlite3_open("database.db", &db);
+	if (rc) {
+		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+		sqlite3_close(db);
+	}
+	rc = sqlite3_exec(db, sql.c_str(), callback, 0, zErrMsg);
+	if (rc != SQLITE_OK) {
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		sqlite3_free(zErrMsg);
+	}
+	sqlite3_prepare(db, sql.c_str(), sql.size(), &stmt, NULL);
+	sqlite3_step(stmt);
+	sqlite3_finalize(stmt);
+	sqlite3_close(db);
 }
