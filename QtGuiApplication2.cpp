@@ -186,6 +186,12 @@ void Subjects(string subjects) {
 	std::regex r13("\\b([0-9]+( )[A-Z][a-z]+( students))");
 	std::regex r14("\\b((ages )[0-9]+( to )[0-9]+)");
 	std::regex r15("\\b((ages )[0-9]+)");
+	std::regex r16("\\b((between )[0-9]+( and )[0-9]+( years))");
+	std::regex r17("\\b((between )[0-9]+)");
+	std::regex r18("\\b(( and )[0-9]+( years))");
+	std::regex r19("\\b([0-9]+( finished))");
+	std::regex r20("\\b([0-9]+( returned))");
+
 
 	int Snumber1 = 0, Snumber2 = 0;
 	string age;
@@ -196,6 +202,7 @@ void Subjects(string subjects) {
 	int ageMin = 999;
 	int ageMax = 0;
 
+
 	if (is_number(ExtractString(subjects, "(N = ", ")")))
 	{
 		Snumber = stoi(ExtractString(subjects, "(N = ", ")"));
@@ -204,6 +211,16 @@ void Subjects(string subjects) {
 	if (is_number(ExtractString(subjects, "(N=", ")")))
 	{
 		Snumber = stoi(ExtractString(subjects, "(N=", ")"));
+	}
+
+	if (is_number(ExtractString(subjects, "(n = ", ")")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(n = ", ")"));
+	}
+
+	if (is_number(ExtractString(subjects, "(n=", ")")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(n=", ")"));
 	}
 
 	tempString = getTextReg(subjects, r1);
@@ -304,6 +321,22 @@ void Subjects(string subjects) {
 		if (age1 < ageMin) ageMin = age1;
 		if (age2 > ageMax) ageMax = age2;
 	}
+
+	if (getTextReg(subjects, r16) != "") {
+		age = getTextReg(subjects, r16);
+		tempString = getTextReg(age, r17);
+		tempString2 = getTextReg(age, r18);
+		if (tempString != "") tempString3 = getTextReg(tempString, numberReg);
+		if (tempString2 != "") tempString4 = getTextReg(tempString2, numberReg);
+		if (tempString3 != "") age1 = stoi(tempString3);
+		if (tempString4 != "") age2 = stoi(tempString4);
+		if (age1 < ageMin) ageMin = age1;
+		if (age2 > ageMax) ageMax = age2;
+	}
+
+	if (getTextReg(subjects, r19) != "") Snumber = stoi(getTextReg(getTextReg(subjects, r19), numberReg));
+	if (getTextReg(subjects, r20) != "") Snumber = stoi(getTextReg(getTextReg(subjects, r20), numberReg));
+
 	age1 = ageMin;
 	if (age1 == 999) age1 = 0;
 	age2 = ageMax;
@@ -311,6 +344,7 @@ void Subjects(string subjects) {
 
 string title(string s) {
 
+	string temp = "";
 	if (ExtractString(s, "Article", "Abstract") != "") return ExtractString(s, "Article", "Abstract");
 	if (ExtractString(s, "Research Report", "ABSTRACT") != "") return ExtractString(s, "Research Report", "ABSTRACT");
 	if (ExtractString(s, "paid", "a r t i c l e") != "") return ExtractString(s, "paid", "a r t i c l e");
@@ -318,6 +352,16 @@ string title(string s) {
 	if (ExtractString(s, "Brief report", "Abstract") != "") return ExtractString(s, "Brief report", "Abstract");
 	if (ExtractString(s, "jrp", "a r t i c l e") != "") return ExtractString(s, "jrp", "a r t i c l e");
 	if (ExtractString(s, "paid", "A R T I C LE I N FO") != "") return ExtractString(s, "paid", "A R T I C LE I N FO");
+	if (ExtractString(s, "plc", "(") != "") return ExtractString(s, "plc", "(");
+
+	std::regex r1("\\b([0-9]+[\character]+( ABSTRACT))");
+	std::regex r2("\\b([\character]+( ABSTRACT))");
+
+	if (getTextReg(s, r1) != "") {
+		temp = getTextReg(s, r1);
+		return temp;
+
+	}
 	return "";
 }
 
@@ -382,19 +426,65 @@ string Nationalities(string s) {
 }
 
 string Variables(string s) {
-	std::regex r1("\\b((correlations between )[A-Za-z]+( and )[A-Za-z]+)");
-	std::regex r2("\\b((association between )[A-Za-z]+( and )[A-Za-z]+)");
-	std::regex r3("\\b([a-z]+ ( and ) [A-Za-z]+ ( were correlated))");
-	std::regex r4("\\b([a-z]+ ( robuslty correlated with ) [A-Za-z]+)");
-	std::regex r5("\\b([a-z]+ ( correlated strongly with ) [A-Za-z]+)");
-	std::regex r6("\\b((relationship among ) [A-Za-z]+ ( and ) [A-Za-z]+)");
-	std::regex r7("\\b((relationship between ) [A-Za-z]+ ( and ) [A-Za-z]+)");
-	std::regex r8("\\b([a-z]+ ( correlated strongly with ) [A-Za-z]+)");
+	std::regex r1("\\b((correlations between )[A-Za-z]+( )[A-Za-z]+( and )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r2("\\b((association between )[A-Za-z]+( )[A-Za-z]+( and )[A-Za-z]+)( )[A-Za-z]+");
+	std::regex r3("\\b([a-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+ ( were correlated))");
+	std::regex r4("\\b([a-z]+( )[A-Za-z]+ ( robuslty correlated with ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r5("\\b([a-z]+( )[A-Za-z]+ ( correlated strongly with ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r6("\\b((relationship among ) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r7("\\b((relationship between ) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r8("\\b([a-z]+( )[A-Za-z]+ ( correlated strongly with ) [A-Za-z]+( )[A-Za-z]+)");
 	std::regex r9("\\b([a-z]+ ((, ) [A-Za-z]+)* ( were all ) ([A-Za-z]+( ))* (associated with) [A-Za-z]+)");
 	std::regex r10("\\b([a-z]+ (( )[A-Za-z]+)* ( associated with ) [A-Za-z]+)");
-	std::regex r11("\\b((relationship between ) [A-Za-z]+ ( and )[A-Za-z]+)");
-	std::regex r12("\\b([A-Za-z]+ (was correlated with )[A-Za-z]+)");
-	std::regex r13("\\b([A-Za-z]+ (were correlated with )[A-Za-z]+)");
+	std::regex r11("\\b((relationship between ) [A-Za-z]+( )[A-Za-z]+ ( and )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r12("\\b([A-Za-z]+( )[A-Za-z]+ (was correlated with )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r13("\\b([A-Za-z]+( )[A-Za-z]+ (were correlated with )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r14("\\b((relations between) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+)");
+
+	std::regex r15("\\b((correlations between )[A-Za-z]+( and )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r16("\\b((association between )[A-Za-z]+( and )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r17("\\b([a-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+ ( were correlated))");
+	std::regex r18("\\b([a-z]+ ( robuslty correlated with ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r19("\\b([a-z]+ ( correlated strongly with ) [A-Za-z]+( )[A-Za-z]+)");
+	std::regex r20("\\b((relationship among ) [A-Za-z]+ ( and ) [A-Za-z]+)( )[A-Za-z]+");
+	std::regex r21("\\b((relationship between ) [A-Za-z]+ ( and ) [A-Za-z]+)( )[A-Za-z]+");
+	std::regex r22("\\b([a-z]+( )[A-Za-z]+ ( correlated strongly with ) [A-Za-z]+)( )[A-Za-z]+");
+	std::regex r23("\\b([a-z]+ ((, ) [A-Za-z]+)* ( were all ) ([A-Za-z]+( ))* (associated with) [A-Za-z]+)");
+	std::regex r24("\\b([a-z]+ (( )[A-Za-z]+)* ( associated with ) [A-Za-z]+)");
+	std::regex r25("\\b((relationship between ) [A-Za-z]+ ( and )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r26("\\b([A-Za-z]+ (was correlated with )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r27("\\b([A-Za-z]+ (were correlated with )[A-Za-z]+( )[A-Za-z]+)");
+	std::regex r28("\\b((relations between) [A-Za-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+)");
+
+	std::regex r29("\\b((correlations between )[A-Za-z]+( )[A-Za-z]+( and )[A-Za-z]+)");
+	std::regex r30("\\b((association between )[A-Za-z]+( )[A-Za-z]+( and )[A-Za-z]+)");
+	std::regex r31("\\b([a-z]+ ( and ) [A-Za-z]+( )[A-Za-z]+ ( were correlated))");
+	std::regex r32("\\b([a-z]+( )[A-Za-z]+ ( robuslty correlated with ) [A-Za-z]+)");
+	std::regex r33("\\b([a-z]+( )[A-Za-z]+ ( correlated strongly with ) [A-Za-z]+)");
+	std::regex r34("\\b((relationship among ) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+)");
+	std::regex r35("\\b((relationship between ) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+)");
+	std::regex r36("\\b([a-z]+( )[A-Za-z]+ ( correlated strongly with ) [A-Za-z]+)");
+	std::regex r37("\\b([a-z]+ ((, ) [A-Za-z]+)* ( were all ) ([A-Za-z]+( ))* (associated with) [A-Za-z]+)");
+	std::regex r38("\\b([a-z]+ (( )[A-Za-z]+)* ( associated with ) [A-Za-z]+)");
+	std::regex r39("\\b((relationship between ) [A-Za-z]+( )[A-Za-z]+ ( and )[A-Za-z]+)");
+	std::regex r40("\\b([A-Za-z]+( )[A-Za-z]+ (was correlated with )[A-Za-z]+)");
+	std::regex r41("\\b([A-Za-z]+( )[A-Za-z]+ (were correlated with )[A-Za-z]+)");
+	std::regex r42("\\b((relations between) [A-Za-z]+( )[A-Za-z]+ ( and ) [A-Za-z]+)");
+
+	std::regex r43("\\b((correlations between )[A-Za-z]+( and )[A-Za-z]+)");
+	std::regex r44("\\b((association between )[A-Za-z]+( and )[A-Za-z]+)");
+	std::regex r45("\\b([a-z]+ ( and ) [A-Za-z]+ ( were correlated))");
+	std::regex r46("\\b([a-z]+ ( robuslty correlated with ) [A-Za-z]+)");
+	std::regex r47("\\b([a-z]+ ( correlated strongly with ) [A-Za-z]+)");
+	std::regex r48("\\b((relationship among ) [A-Za-z]+ ( and ) [A-Za-z]+)");
+	std::regex r49("\\b((relationship between ) [A-Za-z]+ ( and ) [A-Za-z]+)");
+	std::regex r50("\\b([a-z]+ ( correlated strongly with ) [A-Za-z]+)");
+	std::regex r51("\\b([a-z]+ ((, ) [A-Za-z]+)* ( were all ) ([A-Za-z]+( ))* (associated with) [A-Za-z]+)");
+	std::regex r52("\\b([a-z]+ (( )[A-Za-z]+)* ( associated with ) [A-Za-z]+)");
+	std::regex r53("\\b((relationship between ) [A-Za-z]+ ( and )[A-Za-z]+)");
+	std::regex r54("\\b([A-Za-z]+ (was correlated with )[A-Za-z]+)");
+	std::regex r55("\\b([A-Za-z]+ (were correlated with )[A-Za-z]+)");
+	std::regex r56("\\b((relations between) [A-Za-z]+ ( and ) [A-Za-z]+)");
 
 	string variables = "";
 	variables = getTextReg(s, r1);
@@ -410,6 +500,49 @@ string Variables(string s) {
 	if (variables == "") variables = getTextReg(s, r11);
 	if (variables == "") variables = getTextReg(s, r12);
 	if (variables == "") variables = getTextReg(s, r13);
+	if (variables == "") variables = getTextReg(s, r14);
+
+	if (variables == "") variables = getTextReg(s, r15);
+	if (variables == "") variables = getTextReg(s, r16);
+	if (variables == "") variables = getTextReg(s, r17);
+	if (variables == "") variables = getTextReg(s, r18);
+	if (variables == "") variables = getTextReg(s, r19);
+	if (variables == "") variables = getTextReg(s, r20);
+	if (variables == "") variables = getTextReg(s, r21);
+	if (variables == "") variables = getTextReg(s, r22);
+	if (variables == "") variables = getTextReg(s, r23);
+	if (variables == "") variables = getTextReg(s, r24);
+	if (variables == "") variables = getTextReg(s, r25);
+	if (variables == "") variables = getTextReg(s, r26);
+	if (variables == "") variables = getTextReg(s, r27);
+
+	if (variables == "") variables = getTextReg(s, r28);
+	if (variables == "") variables = getTextReg(s, r29);
+	if (variables == "") variables = getTextReg(s, r30);
+	if (variables == "") variables = getTextReg(s, r31);
+	if (variables == "") variables = getTextReg(s, r32);
+	if (variables == "") variables = getTextReg(s, r33);
+	if (variables == "") variables = getTextReg(s, r34);
+	if (variables == "") variables = getTextReg(s, r35);
+	if (variables == "") variables = getTextReg(s, r36);
+	if (variables == "") variables = getTextReg(s, r37);
+	if (variables == "") variables = getTextReg(s, r38);
+	if (variables == "") variables = getTextReg(s, r39);
+	if (variables == "") variables = getTextReg(s, r40);
+
+	if (variables == "") variables = getTextReg(s, r41);
+	if (variables == "") variables = getTextReg(s, r42);
+	if (variables == "") variables = getTextReg(s, r43);
+	if (variables == "") variables = getTextReg(s, r44);
+	if (variables == "") variables = getTextReg(s, r45);
+	if (variables == "") variables = getTextReg(s, r46);
+	if (variables == "") variables = getTextReg(s, r47);
+	if (variables == "") variables = getTextReg(s, r48);
+	if (variables == "") variables = getTextReg(s, r49);
+	if (variables == "") variables = getTextReg(s, r50);
+	if (variables == "") variables = getTextReg(s, r51);
+	if (variables == "") variables = getTextReg(s, r52);
+	if (variables == "") variables = getTextReg(s, r53);
 
 	return variables;
 
@@ -609,6 +742,15 @@ string Type(string s) {
 	return "";
 }
 
+static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
+	int i;
+	for (i = 0; i < argc; i++) {
+		printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+	}
+	printf("\n");
+	return 0;
+}
+
 
 
 string SplitFileName(string str)
@@ -639,19 +781,23 @@ void QtGuiApplication2::on_pushButton_clicked()
 	file_location = QFileDialog::getOpenFileName(this, "Open file", "C://", "pdf(*.pdf)");
 	QMessageBox::information(this, "Denumire fisier", file_location);
 }
-static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
-	int i;
-	for (i = 0; i < argc; i++) {
-		printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
-	}
-	printf("\n");
-	return 0;
-}
+article Article;
+sample Sample;
+variable Variable;
+
+QString article_title_str;
+QString variables_str;
+QString participants_nr_str;
+QString min_age_str;
+QString max_age_str;
+QString nationality_str;
+QString genders_str;
+QString sd_str;
+QString type_str;
+string s;
+
 void QtGuiApplication2::on_pushButton_2_clicked()
 {
-	article Article;
-	sample Sample;
-	variable Variable;
 
 	Init(Article, Sample, Variable);
 
@@ -668,7 +814,6 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	const char* command = str.c_str();
 	system(command);
 	fstream f(file_name + ".txt", fstream::in);
-	string s;
 	getline(f, s, '\0');
 
 	f.close();
@@ -692,15 +837,15 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	cout << "Type: " << Sample.type << endl;
 	
 
-	QString article_title_str = QString::fromStdString(Article.title);
-	QString variables_str = QString::fromStdString(Variables(s));
-	QString participants_nr_str = QString::number(Snumber);
-	QString min_age_str = QString::number(age1);
-	QString max_age_str = QString::number(age2);
-	QString nationality_str = QString::fromStdString(Sample.nationality);
-	QString genders_str = QString::fromStdString(Sample.gender);
-	QString sd_str = QString::number(Variable.sd);
-	QString type_str = QString::fromStdString(Sample.type);
+	article_title_str = QString::fromStdString(Article.title);
+	variables_str = QString::fromStdString(Variables(s));
+	participants_nr_str = QString::number(Snumber);
+	min_age_str = QString::number(age1);
+	max_age_str = QString::number(age2);
+	nationality_str = QString::fromStdString(Sample.nationality);
+	genders_str = QString::fromStdString(Sample.gender);
+	sd_str = QString::number(Variable.sd);
+	type_str = QString::fromStdString(Sample.type);
 
 	ui.article_title->setText(article_title_str);
 	ui.variables->setText(variables_str);
@@ -711,12 +856,14 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	ui.genders->setText(genders_str);
 	ui.sd->setText(sd_str);
 	ui.type->setText(type_str);
-
+}
+void QtGuiApplication2::on_pushButton_3_clicked()
+{
 	sqlite3* db;
 	char** zErrMsg = 0;
-	string sql = "INSERT INTO samples ('type', 'min', 'max', 'SD', 'nationality', 'correlation','size', 'gender') VALUES ('" + Sample.type + "' , '" + to_string(age1) + "','" + to_string(age2) + "','" + to_string(Variable.sd) + "','" + Sample.nationality + "','" + Variables(s) + "','" + to_string(Snumber) + "','" + Sample.gender +
-		"'); INSERT INTO articles ('title') VALUES ('" + Article.title +
-		"'); INSERT INTO variables ('type', 'min', 'max', 'sd') VALUES ('" + Sample.type + "','" + to_string(age1) + "','" + to_string(age2) + "','" + to_string(Variable.sd) + "');";
+	string sql = "INSERT INTO samples ('type', 'min', 'max', 'SD', 'nationality', 'correlation','size', 'gender') VALUES ('" + ui.type->text().toStdString() + "' , '" + ui.min_age->text().toStdString() + "','" + ui.max_age->text().toStdString() + "','" + ui.sd->text().toStdString() + "','" + ui.nationality->text().toStdString() + "','" + ui.variables->text().toStdString() + "','" + ui.participants_nr->text().toStdString() + "','" + ui.genders->text().toStdString() +
+		"'); INSERT INTO articles ('title') VALUES ('" + ui.article_title->text().toStdString() +
+		"'); INSERT INTO variables ('type', 'min', 'max', 'sd') VALUES ('" + ui.type->text().toStdString() + "','" + ui.min_age->text().toStdString() + "','" + ui.max_age->text().toStdString() + "','" + ui.sd->text().toStdString() + "');";
 
 	sqlite3_stmt* stmt;
 	int rc = sqlite3_open("database.db", &db);
@@ -729,8 +876,5 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		sqlite3_free(zErrMsg);
 	}
-	sqlite3_prepare(db, sql.c_str(), sql.size(), &stmt, NULL);
-	sqlite3_step(stmt);
-	sqlite3_finalize(stmt);
 	sqlite3_close(db);
 }
