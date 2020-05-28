@@ -13,6 +13,9 @@
 #include <string>
 #include <qlineedit.h>
 #include "sqlite3.h"
+#include "qtextedit.h"
+#include "qmenubar.h"
+
 
 class QtGuiApplication2 : public QMainWindow
 {
@@ -25,6 +28,8 @@ private slots:
 	void on_pushButton_clicked();
 	void on_pushButton_2_clicked();
 	void on_pushButton_3_clicked();
+	void on_actionAbout_application_triggered();
+	void on_actionExit_application_triggered();
 private:
 	Ui::QtGuiApplication2Class ui;
 	QLineEdit *article_title = new QLineEdit();
@@ -36,4 +41,5 @@ private:
 	QLineEdit *sd = new QLineEdit;
 	QLineEdit *type = new QLineEdit;
 	QLineEdit *variables = new QLineEdit;
+	QTextEdit *textEdit = new QTextEdit;
 };

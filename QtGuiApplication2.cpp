@@ -160,17 +160,6 @@ int age2 = 0;
 
 void Subjects(string subjects) {
 
-	/*
-	the sample included x Israeli students
-	x respondents were female*/
-
-	/*
-	ages ranged between x and y years
-	the men/ ranged in age from x to y
-	participants ages ranged from x year old to y years old
-	ages of participants ranged from x to y years
-	*/
-
 	std::regex r1("\\b([0-9]+( participants))");
 	std::regex r2("\\b([0-9]+( men and women))");
 	std::regex r3("\\b([0-9]+( individuals))");
@@ -183,7 +172,7 @@ void Subjects(string subjects) {
 	std::regex r10("\\b((to )[0-9]+)");
 	std::regex r11("\\b((from )[0-9]+( years old to )[0-9]+)");
 	std::regex r12("\\b((from )[0-9]+( to )[0-9]+( years))");
-	std::regex r13("\\b([0-9]+( )[A-Z][a-z]+( students))");
+	std::regex r13("\\b([0-9]+( )([A-Z][a-z])*( students))");
 	std::regex r14("\\b((ages )[0-9]+( to )[0-9]+)");
 	std::regex r15("\\b((ages )[0-9]+)");
 	std::regex r16("\\b((between )[0-9]+( and )[0-9]+( years))");
@@ -191,6 +180,11 @@ void Subjects(string subjects) {
 	std::regex r18("\\b(( and )[0-9]+( years))");
 	std::regex r19("\\b([0-9]+( finished))");
 	std::regex r20("\\b([0-9]+( returned))");
+	/*std::regex r21("\\b([0-9]+( men and))");
+	std::regex r22("\\b([0-9]+( women and )[0-9]+( men))");
+	std::regex r23("\\b([0-9]+( men))");
+	std::regex r24("\\b([0-9]+( women))");*/
+	std::regex r25("\\b((sample of )[0-9]+( target))");
 
 
 	int Snumber1 = 0, Snumber2 = 0;
@@ -208,9 +202,20 @@ void Subjects(string subjects) {
 		Snumber = stoi(ExtractString(subjects, "(N = ", ")"));
 	}
 
+	if (is_number(ExtractString(subjects, "(N = ", " )")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(N = ", " )"));
+	}
+
 	if (is_number(ExtractString(subjects, "(N=", ")")))
 	{
-		Snumber = stoi(ExtractString(subjects, "(N=", ")"));
+		Snumber = stoi(ExtractString(subjects, "(N = ", ")"));
+	}
+
+
+	if (is_number(ExtractString(subjects, "(N= ", ")")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(N= ", ")"));
 	}
 
 	if (is_number(ExtractString(subjects, "(n = ", ")")))
@@ -218,9 +223,19 @@ void Subjects(string subjects) {
 		Snumber = stoi(ExtractString(subjects, "(n = ", ")"));
 	}
 
+	if (is_number(ExtractString(subjects, "(n = ", " )")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(n = ", " )"));
+	}
+
 	if (is_number(ExtractString(subjects, "(n=", ")")))
 	{
 		Snumber = stoi(ExtractString(subjects, "(n=", ")"));
+	}
+
+	if (is_number(ExtractString(subjects, "(n= ", ")")))
+	{
+		Snumber = stoi(ExtractString(subjects, "(n= ", ")"));
 	}
 
 	tempString = getTextReg(subjects, r1);
@@ -233,6 +248,9 @@ void Subjects(string subjects) {
 	if (tempString != "") Snumber = stoi(getTextReg(tempString, numberReg));
 
 	tempString = getTextReg(subjects, r4);
+	if (tempString != "") Snumber = stoi(getTextReg(tempString, numberReg));
+
+	tempString = getTextReg(subjects, r25);
 	if (tempString != "") Snumber = stoi(getTextReg(tempString, numberReg));
 
 	tempString = getTextReg(subjects, r5);
@@ -261,6 +279,7 @@ void Subjects(string subjects) {
 
 	if (is_number(ExtractString(subjects, "a sample of ", " target participants")))
 		Snumber = stoi(ExtractString(subjects, "a sample of ", " target participants"));
+
 
 	if (ExtractString(subjects, "ges ranged ", " years") != "") {
 		age = ExtractString(subjects, "ges ranged ", " years");
@@ -306,7 +325,7 @@ void Subjects(string subjects) {
 		if (age1 < ageMin) ageMin = age1;
 		if (age2 > ageMax) ageMax = age2;
 	}
-	if (getTextReg(subjects, r13) != "") {
+	/*if (getTextReg(subjects, r13) != "") {
 		tempString = getTextReg(subjects, r13);
 		Snumber = stoi(getTextReg(tempString, numberReg));
 	}
@@ -332,7 +351,7 @@ void Subjects(string subjects) {
 		if (tempString4 != "") age2 = stoi(tempString4);
 		if (age1 < ageMin) ageMin = age1;
 		if (age2 > ageMax) ageMax = age2;
-	}
+	}*/
 
 	if (getTextReg(subjects, r19) != "") Snumber = stoi(getTextReg(getTextReg(subjects, r19), numberReg));
 	if (getTextReg(subjects, r20) != "") Snumber = stoi(getTextReg(getTextReg(subjects, r20), numberReg));
@@ -362,12 +381,130 @@ string title(string s) {
 		return temp;
 
 	}
-	return "";
+	return s.substr(0, 500);
 }
 
 string getNationalities(string s1) {
+	string final = "";
+	string Nationalities[] = { " Afghanistan ", " Afghan ",
+		" Albania ", " Albanian ",
+		" Algeria ", 	" Algerian ",
+		" Argentina ", 	" Argentine ",
+		" Australia ", 	" Australian ",
+		" Austria ", 	" Austrian ",
+		" Bangladesh ", 	" Bangladeshi ",
+		" Belgium ", 	" Belgian ",
+		" Bolivia ", 	" Bolivian ",
+		" Botswana ", 	" Batswana ",
+		" Brazil ", 	" Brazilian ",
+		" Bulgaria ", 	" Bulgarian ",
+		" Cambodia ", 	" Cambodian ",
+		" Cameroon ", 	" Cameroonian ",
+		" Canada ", 	" Canadian ",
+		" Chile ", 	" Chilean ",
+		" China ", 	" Chinese ",
+		" Colombia ", " Colombian ",
+		" Costa Rica ", 	" Costa Rican ",
+		" Croatia ", 	" Croatian ",
+		" Cuba ", 	" Cuban ",
+		" Czech Republic ", 	" Czech ",
+		" Denmark ", 	" Danish ",
+		" Dominican Republic ", 	" Dominican ",
+		" Ecuador ", 	" Ecuadorian ",
+		" Egypt ", 	" Egyptian ",
+		" El Salvador ", 	" Salvadorian ",
+		" England ", 	" English ",
+		" Estonia ",	" Estonian ",
+		" Ethiopia ", 	" Ethiopian ",
+		" Fiji ", 	" Fijian ",
+		" Finland ", 	" Finnish ",
+		" France ",	" French ",
+		" Germany ",	" German ",
+		" Ghana ", 	" Ghanaian ",
+		" Greece ", 	" Greek ",
+		" Guatemala ", 	" Guatemalan ",
+		" Haiti ", 	" Haitian ",
+		" Honduras ", 	" Honduran ",
+		" Hungary ",	" Hungarian ",
+		" Iceland ", 	" Icelandic ",
+		" India ", 	" Indian ",
+		" Indonesia ", 	" Indonesian ",
+		" Iran ", 	" Iranian ",
+		" Iraq ", 	" Iraqi ",
+		" Ireland ", 	" Irish ",
+		" Israel ", 	" Israeli ",
+		" Italy ", 	" Italian ",
+		" Jamaica ", 	" Jamaican ",
+		" Japan ", 	" Japanese ",
+		" Jordan ", 	" Jordanian ",
+		" Kenya ", 	" Kenyan ",
+		" Kuwait ", 	" Kuwaiti ",
+		" Laos ", 	" Lao ",
+		" Latvia ", 	" Latvian ",
+		" Lebanon ", 	" Lebanese ",
+		" Libya ", 	" Libyan ",
+		" Lithuania ", 	" Lithuanian ",
+		" Madagascar ", 	" Malagasy ",
+		" Malaysia ", 	" Malaysian ",
+		" Mali ", 	" Malian ",
+		" Malta ", 	" Maltese ",
+		" Mexico ", 	" Mexican ",
+		" Mongolia ", 	" Mongolian ",
+		" Morocco ", 	" Moroccan ",
+		" Mozambique ", 	" Mozambican ",
+		" Namibia ", 	" Namibian ",
+		" Nepal ", 	" Nepalese ",
+		" Netherlands ", 	" Dutch ",
+		" New Zealand ", 	" New Zealand ",
+		" Nicaragua ", 	" Nicaraguan ",
+		" Nigeria ", 	" Nigerian ",
+		" Norway ", 	" Norwegian ",
+		" Pakistan ", 	" Pakistani ",
+		" Panama ",	" Panamanian ",
+		" Paraguay ", 	" Paraguayan ",
+		" Peru ", 	" Peruvian ",
+		" Philippines ", 	" Philippine ",
+		" Poland ", 	" Polish ",
+		" Portugal ", 	" Portuguese ",
+		" Romania ", 	" Romanian ",
+		" Russia ", 	" Russian ",
+		" Saudi Arabia ", 	" Saudi ",
+		" Scotland ", 	" Scottish ",
+		" Senegal ",	" Senegalese ",
+		" Serbia ", 	" Serbian ",
+		" Singapore ",	" Singaporean ",
+		" Slovakia ", 	" Slovak ",
+		" South Africa ", 	" South African ",
+		" South Korea ", 	" Korean ",
+		" Spain ",	" Spanish ",
+		" Sri Lanka ", 	" Sri Lankan ",
+		" Sudan ", 	" Sudanese ",
+		" Sweden ", 	" Swedish ",
+		" Switzerland ", 	" Swiss ",
+		" Syria ", 	" Syrian ",
+		" Taiwan ",	" Taiwanese ",
+		" Tajikistan ", 	" Tajikistani ",
+		" Thailand ", 	" Thai ",
+		" Tonga ", 	" Tongan ",
+		" Tunisia ", 	" Tunisian ",
+		" Turkey ", " Turkish ",
+		" Ukraine ", 	" Ukrainian ",
+		" United Arab Emirates ", 	" Emirati ",
+		" United Kingdom ", 	" British ",
+		" United States ", 	" American ",
+		" Uruguay ", 	" Uruguayan ",
+		" Venezuela ", 	" Venezuelan ",
+		" Vietnam ", 	" Vietnamese ",
+		" Wales ", 	" Welsh ",
+		" Zambia ", 	" Zambian ",
+		" Zimbabwe ", " Zimbabwean "
+		" Africa ", " African ",
+		" Black African ", " Black African ",
+		" Asian American ", " Asian American ",
+		" Asia ", " Asian ",
+		" Europe ", " European ", };
 
-	std::regex r1("\\b((participants were Black African))");
+	/*std::regex r1("\\b((participants were Black African))");
 	std::regex r2("\\b((participants were Asian American))");
 	std::regex r3("\\b((participants were )[A-Z][a-z]+)");
 	std::regex r4("\\b((Black African students))");
@@ -376,9 +513,9 @@ string getNationalities(string s1) {
 	std::regex r7("\\b((substantial proportions of )(Asian American))");
 	std::regex r8("\\b((substantial proportions of )(Black African))");
 	std::regex r9("\\b((substantial proportions of )[A-Z][a-z]+)");
-	/*std::regex r13("\\b((respondents were )(Asian American)");
-		std::regex r14("\\b((respondents were )(Black African)");
-		std::regex r15("\\b((respondents were )[A-Z][a-z]+)");*/
+	std::regex r13("\\b((respondents were )(Asian American))");
+	std::regex r14("\\b((respondents were )(Black African))");
+	std::regex r15("\\b((respondents were )[A-Z][a-z]+)");
 	std::regex r10("\\b((Black African))");
 	std::regex r11("\\b((Asian American))");
 	std::regex r12("\\b([A-Z][a-z]+)");
@@ -392,13 +529,21 @@ string getNationalities(string s1) {
 	if (getTextReg(s1, r3) != "") return getTextReg(getTextReg(s1, r3), r12);// return; }
 	if (getTextReg(s1, r6) != "") return getTextReg(getTextReg(s1, r6), r12); //return; }
 	if (getTextReg(s1, r9) != "") return getTextReg(getTextReg(s1, r9), r12);// return; }
-	/*if (getTextReg(s1, r13) != "") return getTextReg(getTextReg(s1, r13), r11);// return; }
+	if (getTextReg(s1, r13) != "") return getTextReg(getTextReg(s1, r13), r11);// return; }
 	if (getTextReg(s1, r14) != "") return getTextReg(getTextReg(s1, r14), r10); //return; }
-	if (getTextReg(s1, r15) != "") return getTextReg(getTextReg(s1, r15), r12);// return; }*/
-	return "";
+	if (getTextReg(s1, r15) != "") return getTextReg(getTextReg(s1, r15), r12);// return; }
+	return "";*/
+
+	for (int i = 0; i <= 231; i = i + 2) {
+		if (s1.find(Nationalities[i]) != std::string::npos || s1.find(Nationalities[i + 1]) != std::string::npos)
+			if (i % 2 == 0) final = final + " " + Nationalities[i + 1];
+			else final = final + Nationalities[i];
+	}
+	return final;
 }
 
 string Nationalities(string s) {
+
 
 	string participants = ExtractString(s, "Abstract", "Keywords");
 
@@ -420,6 +565,11 @@ string Nationalities(string s) {
 	if (participants == "") {
 
 		participants = ExtractString(s, "Participants", "Measures");
+	}
+
+	if (participants == "") {
+
+		participants = ExtractString(s, "ABSTRACT", "INTRODUCTION");
 	}
 
 	return getNationalities(participants);
@@ -544,6 +694,11 @@ string Variables(string s) {
 	if (variables == "") variables = getTextReg(s, r52);
 	if (variables == "") variables = getTextReg(s, r53);
 
+	if (ExtractString(s, "The study aims to examining ", ".") != "") variables = ExtractString(s, "The study aims to examining ", ".");
+	if (ExtractString(s, "The relationship between ", " was") != "") variables = ExtractString(s, "The relationship between ", " was");
+	if (ExtractString(s, "The relationship between ", ".") != "") variables = ExtractString(s, "The relationship between ", ".");
+
+	if (s.find(" Big Five ") != string::npos && variables == "") variables = "Something about Big Five";
 	return variables;
 
 	/*
@@ -625,9 +780,9 @@ string getGender(string s) {
 	if (getTextReg(s, r5) != "" || getTextReg(s, r6) != "" || getTextReg(s, r7) != "" || getTextReg(s, r8) != "" ||
 		getTextReg(s, r13) != "" || getTextReg(s, r14) != "" || getTextReg(s, r15) != "" || getTextReg(s, r16) != "") female = true;
 
-	if (male & !female) return "m";
-	if (!male & female) return "f";
-	if (male & female) return "mf";
+	if (male && !female) return "m";
+	if (!male && female) return "f";
+	if (male && female) return "mf";
 	return "";
 }
 
@@ -753,6 +908,7 @@ static int callback(void* NotUsed, int argc, char** argv, char** azColName) {
 
 
 
+
 string SplitFileName(string str)
 {
 	string str_copy = str;
@@ -780,6 +936,14 @@ void QtGuiApplication2::on_pushButton_clicked()
 {
 	file_location = QFileDialog::getOpenFileName(this, "Open file", "C://", "pdf(*.pdf)");
 	QMessageBox::information(this, "Denumire fisier", file_location);
+}
+void QtGuiApplication2::on_actionAbout_application_triggered()
+{
+	QMessageBox::information(this, "About", "This application was made within the Faculty of Computer Science from Iasi.");
+}
+void QtGuiApplication2::on_actionExit_application_triggered()
+{
+	QtGuiApplication2::close();
 }
 article Article;
 sample Sample;
@@ -821,7 +985,7 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	Article.title = title(s);
 	Variable.sd = Sample.sd = SD(s);
 	Sample.gender = getGender(s);
-	Sample.nationality = getNationalities(s);
+	Sample.nationality = Nationalities(s);
 
 	Subjects(s);
 	cout << "Title: " << Article.title << endl;
@@ -856,7 +1020,11 @@ void QtGuiApplication2::on_pushButton_2_clicked()
 	ui.genders->setText(genders_str);
 	ui.sd->setText(sd_str);
 	ui.type->setText(type_str);
+
+	ui.textEdit->setText(QString::fromStdString(s));
 }
+
+
 void QtGuiApplication2::on_pushButton_3_clicked()
 {
 	sqlite3* db;
@@ -876,5 +1044,6 @@ void QtGuiApplication2::on_pushButton_3_clicked()
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		sqlite3_free(zErrMsg);
 	}
+	
 	sqlite3_close(db);
 }
